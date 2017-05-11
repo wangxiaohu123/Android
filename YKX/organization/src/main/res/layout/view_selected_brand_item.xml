@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/list_view_item_margin_left"
+        android:paddingRight="@dimen/list_view_item_margin_right"
+        android:paddingTop="@dimen/list_view_item_margin_top"
+        android:paddingBottom="@dimen/list_view_item_margin_buttom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/svg_home_user_center_mrtx"
+            android:id="@+id/logo_view"
+            android:layout_width="80dp"
+            android:layout_height="80dp"/>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginLeft="15dp"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/name_textview"
+                android:text="优胜教育"
+                style="@style/ListViewItemTitleTextStyle"
+                android:layout_marginBottom="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@drawable/svg_pf_name"
+                    android:id="@+id/gander_view"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"/>
+
+                <TextView
+                    android:id="@+id/role_name_textview"
+                    android:text="校长"
+                    android:layout_marginLeft="5dp"
+                    style="@style/ListViewItemSecondTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <View
+        android:background="@color/default_line_color"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+
+</LinearLayout>

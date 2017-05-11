@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_curriculum"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ykx.organization.pages.home.operates.curriculum.AddCurriculumActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/campus_title_first_view"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@color/default_line_color"
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+
+
+            <LinearLayout
+                android:gravity="center"
+                android:background="@drawable/corner_view_yj_bg"
+                android:layout_width="18dp"
+                android:layout_height="18dp">
+                <TextView
+                    android:text="1"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size_10"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"/>
+            </LinearLayout>
+            <TextView
+                android:text="@string/organization_activity_nav_xjxq_text"
+                android:textColor="@color/default_second_text_color"
+                android:layout_marginLeft="2dp"
+                android:gravity="center"
+                android:textSize="@dimen/size_12"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+            <ImageView
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/svg_detail"
+                android:layout_width="6dp"
+                android:layout_height="12dp"/>
+
+            <LinearLayout
+                android:gravity="center"
+                android:background="@drawable/corner_view_yj_unselected_bg"
+                android:layout_width="18dp"
+                android:layout_height="18dp">
+                <TextView
+                    android:text="2"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size_10"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"/>
+            </LinearLayout>
+            <TextView
+                android:text="@string/organization_activity_nav_xjbk_text"
+                android:layout_marginLeft="2dp"
+                android:textColor="@color/default_unselected_color"
+                android:gravity="center"
+                android:textSize="@dimen/size_12"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/campus_title_second_view"
+            android:visibility="gone"
+            android:text="@string/curriculum_activity_nav_title"
+            android:gravity="center"
+            android:textColor="@color/default_second_text_color"
+            android:background="@color/default_line_color"
+            android:textSize="@dimen/size_12"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/list_view_item_margin_left"
+            android:layout_marginRight="@dimen/list_view_item_margin_right"
+            android:layout_height="75dp">
+
+            <TextView
+                android:textSize="@dimen/size_14"
+                android:gravity="center_vertical"
+                android:text="@string/campus_activity_add_xqmc"
+                android:id="@+id/add_campus_xqmc"
+                android:textColor="@color/theme_first_text_color"
+                android:layout_width="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_height="match_parent"/>
+
+            <View
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:background="@color/default_line_color"
+                android:layout_height="1dp"/>
+
+            <EditText
+                android:hint="@string/campus_activity_add_xqmc_hint"
+                android:id="@+id/xq_name_textview"
+                android:gravity="center_vertical|right"
+                android:textColor="@color/default_second_text_color"
+                android:background="@null"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/size_14"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:onClick="selectedAddressAction"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/list_view_item_margin_left"
+            android:layout_marginRight="@dimen/list_view_item_margin_right"
+            android:layout_height="75dp">
+
+            <TextView
+                android:textSize="@dimen/size_14"
+                android:gravity="center_vertical"
+                android:text="@string/campus_activity_add_xqdz"
+                android:id="@+id/add_campus_xqdz"
+                android:textColor="@color/theme_first_text_color"
+                android:layout_width="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:text="@string/campus_activity_add_xqdz_hint"
+                android:gravity="center_vertical|left"
+                android:textColor="@color/default_second_text_color"
+                android:layout_toLeftOf="@+id/organization_detail_view"
+                android:id="@+id/curriculum_type_view"
+                android:textSize="@dimen/size_14"
+                android:layout_width="230dp"
+                android:layout_height="match_parent"/>
+
+            <ImageView
+                android:id="@+id/organization_detail_view"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="29dp"
+                android:src="@drawable/svg_detail"
+                android:layout_alignParentRight="true"
+                android:layout_width="6dp"
+                android:layout_height="12dp"/>
+
+            <View
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:background="@color/default_line_color"
+                android:layout_height="1dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginLeft="@dimen/list_view_item_margin_left"
+            android:layout_marginRight="@dimen/list_view_item_margin_right"
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+
+            <com.ykx.organization.pages.bases.MapContainer
+                android:id="@+id/map_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.ykx.organization.pages.bases.MyMapView
+
+                    android:id="@+id/amap_mapview"
+
+                    android:layout_width="match_parent"
+
+                    android:layout_height="match_parent"/>
+            </com.ykx.organization.pages.bases.MapContainer>
+
+            <View
+                android:onClick="useLocationAction"
+                android:background="@color/theme_transparent_style"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_width="60dp"
+                android:layout_height="60dp"/>
+
+
+            <View
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:background="@color/default_line_color"
+                android:layout_height="1dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/list_view_item_margin_left"
+            android:layout_marginRight="@dimen/list_view_item_margin_right"
+            android:layout_height="75dp">
+
+            <TextView
+                android:textSize="@dimen/size_14"
+                android:gravity="center_vertical"
+                android:text="@string/campus_activity_add_xqdh"
+                android:id="@+id/add_campus_xqdh"
+                android:textColor="@color/theme_first_text_color"
+                android:layout_width="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_height="match_parent"/>
+
+            <View
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:background="@color/default_line_color"
+                android:layout_height="1dp"/>
+
+            <EditText
+                android:hint="@string/campus_activity_add_xqdh_hint"
+                android:id="@+id/xq_phone"
+                android:gravity="center_vertical|right"
+                android:background="@null"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/size_14"
+                android:textColor="@color/default_second_text_color"
+                android:layout_width="200dp"
+                android:inputType="phone"
+                android:maxLength="12"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="@dimen/list_view_item_margin_left"
+            android:layout_marginRight="@dimen/list_view_item_margin_right"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="@dimen/size_14"
+                android:gravity="center_vertical"
+                android:text="@string/campus_activity_add_campus_info_bk_pics"
+                android:id="@+id/add_campus_xqzp"
+                android:textColor="@color/theme_first_text_color"
+                android:layout_width="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_height="match_parent"/>
+
+
+            <LinearLayout
+                android:id="@+id/campus_contents_pics"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <com.ykx.baselibs.views.SubmitStateView
+            android:layout_marginTop="30dip"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="30dp"
+            android:onClick="saveAction"
+            android:id="@+id/submit_view"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+
+    </LinearLayout>
+</ScrollView>

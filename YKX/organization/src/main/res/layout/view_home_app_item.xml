@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/jg_xq_contentview"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_above="@+id/buttom_line_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_marginRight="1dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginBottom="36dp"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/app_logo"
+                android:src="@drawable/svg_home_operate_cell1_jgxq"
+                android:layout_width="wrap_content"
+                android:layout_height="27dp"/>
+            <TextView
+                android:id="@+id/app_name"
+                android:text="@string/operate_fragment_group_item1_cell_xqbk"
+                style="@style/CellMenuTextStyle"
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_height="20dp"/>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/right_lieve_view"
+            android:layout_marginLeft="-1dp"
+            android:background="@color/default_line_color"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/buttom_lieve_view"
+        android:background="@color/default_line_color"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+</RelativeLayout>

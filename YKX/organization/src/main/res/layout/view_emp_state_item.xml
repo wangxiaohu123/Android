@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/list_view_item_margin_left"
+        android:paddingRight="@dimen/list_view_item_margin_right"
+        android:layout_width="match_parent"
+        android:layout_height="106dp">
+
+        <ImageView
+            android:src="@drawable/svg_teacher"
+            android:id="@+id/photo_view"
+            android:background="@drawable/corner_imageview_teacher_bg"
+            android:layout_marginTop="15dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/name_textview"
+                    android:layout_alignParentLeft="true"
+                    android:text="xxx"
+                    android:layout_marginTop="@dimen/list_view_item_margin_top"
+                    android:layout_marginLeft="10dp"
+                    style="@style/ListViewItemTitleTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_marginTop="18dp"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:background="@drawable/svg_phone"
+                    android:layout_toRightOf="@+id/name_textview"
+                    android:layout_marginLeft="14dp"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"/>
+                <TextView
+                    android:id="@+id/phone_textview"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="4dp"
+                    android:text="15982848645"
+                    style="@style/ListViewItemSecondTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@drawable/svg_pf_name"
+                    android:layout_toRightOf="@+id/name_textview"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"/>
+                <TextView
+                    android:id="@+id/des_textview"
+                    android:layout_alignParentLeft="true"
+                    android:text="xxxxxxxxxxxx"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="-2dp"
+                    style="@style/ListViewItemSecondTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <View
+        android:background="@color/default_line_color"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/list_view_item_margin_left"
+        android:paddingRight="@dimen/list_view_item_margin_right"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/emp_do_pass_context_status"
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+
+            <TextView
+                android:id="@+id/emp_unpass"
+                android:text="@string/emp_manager_activity_invited_emp_share_itme3_cell_jj"
+                android:textSize="@dimen/size_14"
+                android:layout_toLeftOf="@+id/emp_pass"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/corner_view_jh"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"/>
+
+
+            <TextView
+                android:id="@+id/emp_pass"
+                android:text="@string/emp_manager_activity_invited_emp_share_itme3_cell_tg"
+                android:textSize="@dimen/size_14"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/textview_selector"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/emp_pass_context_status"
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+
+            <TextView
+                android:id="@+id/emp_pass_status"
+                android:text="@string/emp_manager_activity_invited_emp_share_itme3_cell_ytg"
+                android:textSize="@dimen/size_14"
+                android:textColor="@color/theme_main_background_color"
+                android:gravity="center"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <View
+        android:background="@color/default_line_color"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"/>
+
+</LinearLayout>

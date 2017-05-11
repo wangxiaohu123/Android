@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_campus_address"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ykx.organization.pages.home.operates.campus.CampusAddressActivity">
+
+    <View
+        android:id="@+id/null_view"
+        android:background="@color/theme_transparent_style"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/default_line_color"
+        android:layout_height="50dp">
+        <RelativeLayout
+            android:background="@drawable/corner_search_view_write_bg"
+            android:layout_width="match_parent"
+            android:layout_toLeftOf="@+id/search_cannel_view"
+            android:gravity="center"
+            android:layout_margin="8dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/search_tag_view"
+                android:src="@drawable/svg_search"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="12dp"
+                android:layout_alignParentLeft="true"
+                android:layout_width="15dp"
+                android:layout_height="15dp"/>
+            <EditText
+                android:id="@+id/search_editview"
+                android:layout_toRightOf="@+id/search_tag_view"
+                android:textColor="@color/default_second_text_color"
+                android:background="@null"
+                android:layout_marginLeft="3dp"
+                android:textSize="@dimen/size_14"
+                android:lines="1"
+                android:textCursorDrawable="@null"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:hint="@string/sys_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </RelativeLayout>
+        <TextView
+            android:text="@string/sys_cannel"
+            android:id="@+id/search_cannel_view"
+            android:onClick="cannelAction"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/theme_main_background_color"
+            android:textSize="@dimen/size_16"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+    </RelativeLayout>
+
+
+
+    <ListView
+        android:id="@+id/address_listview"
+        android:background="@color/white"
+        android:divider="@null"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

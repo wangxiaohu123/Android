@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@mipmap/version_download_bg"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="90dp">
+
+            <TextView
+                android:text="发现新版本"
+                android:layout_marginTop="20dp"
+                android:textSize="@dimen/size_16"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/close_view"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="30dp"
+            android:src="@mipmap/version_download_close"
+            android:layout_width="10dp"
+            android:layout_height="10dp"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:background="@drawable/corner_view_buttom"
+            android:layout_marginRight="2px"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/app_version_info_view"
+                android:text="@string/sys_version_info_defailt_title"
+                android:textColor="@color/theme_first_text_color"
+                android:layout_marginBottom="15dp"
+                android:textSize="@dimen/size_13"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/app_info_view"
+                    android:text="更新简介..."
+                    android:textSize="@dimen/size_12"
+                    android:textColor="@color/default_second_text_color"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_marginTop="15dp"
+                android:background="@color/default_line_color"
+                android:layout_width="match_parent"
+                android:layout_height="1px"/>
+
+            <LinearLayout
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="3dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/true_view"
+                    android:text="@string/sys_download"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size_14"
+                    android:gravity="center"
+                    android:background="@drawable/textview_selector"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

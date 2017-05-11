@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+        <RelativeLayout
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center_vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+                <LinearLayout
+                    android:id="@+id/action_bar_left_view"
+                    android:layout_alignParentLeft="true"
+                    android:orientation="horizontal"
+                    android:layout_width="150dp"
+                    android:gravity="center_vertical"
+                    android:layout_height="fill_parent">
+
+                        <LinearLayout
+                            android:gravity="center_vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent">
+                                <ImageView
+                                    android:id="@+id/action_bar_default_back"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"/>
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/action_bar_default_back_text"
+                            android:gravity="center"
+                            android:layout_marginLeft="-5dp"
+                            android:textStyle="bold"
+                            android:visibility="gone"
+                            android:text="@string/header_back_text"
+                            android:textSize="@dimen/size_16"
+                            android:textColor="@color/default_second_text_color"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"/>
+                </LinearLayout>
+
+                <FrameLayout
+                    android:id="@+id/action_bar_center_view"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/action_bar_default_title"
+                    android:gravity="center"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginLeft="50dp"
+                    android:textSize="@dimen/size_18"
+                    android:textColor="@color/theme_first_text_color"
+                    android:text="@string/header_title_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"/>
+
+                <LinearLayout
+                    android:id="@+id/right_contentview"
+                    android:layout_toLeftOf="@+id/action_bar_content_default_right"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/action_bar_content_default_right"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent">
+                        <ImageView
+                            android:id="@+id/action_bar_default_right"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:visibility="gone"
+                            android:gravity="center"
+                            android:textSize="@dimen/size_16"/>
+                </LinearLayout>
+        </RelativeLayout>
+
+</LinearLayout>

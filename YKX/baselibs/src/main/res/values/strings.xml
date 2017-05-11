@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">YKX</string>
+
+
+    <string name="header_back_text">返回</string>
+    <string name="header_title_text">主界面</string>
+    <string name="default_activity_title_title">主界面</string>
+    <string name="default_activity_submit_title">提 交</string>
+    <string name="default_activity_cannel_title">取 消</string>
+    <string name="default_exit_window_title">提示</string>
+    <string name="default_exit_window_content">确认是否退出该应用?</string>
+    <string name="default_exit_window_yes">确认</string>
+    <string name="default_exit_window_cancel">取消</string>
+    <string name="default_net_request_failure">请求服务器失败</string>
+    <string name="default_exit_text">退 出</string>
+
+    <string name="down_file_window_title">数据更新</string>
+
+    <string name="sys_dialog_delete_title">删除提示</string>
+    <string name="sys_dialog_delete_content">是否确认执行该删除操作?</string>
+    <string name="sys_cannel">取消</string>
+    <string name="sys_sure">确认</string>
+    <string name="sys_search">搜索</string>
+
+    <string name="sys_download">立即下载</string>
+
+    <string name="sys_save">保存</string>
+    <string name="sys_default_null">暂无</string>
+    <string name="sys_exception_message">异常信息提示!</string>
+
+    <string name="sys_multis_title">已经选择</string>
+
+    <string name="sys_exception_connect_message">亲，您貌似没有网?</string>
+    <string name="sys_exception_kfz_message">披星戴月开发中,敬请期待~</string>
+
+    <string name="sys_input_message_is_save_toast">请保存填写数据</string>
+
+</resources>

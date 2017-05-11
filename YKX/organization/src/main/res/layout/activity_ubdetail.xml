@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_ubdetail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/default_line_color"
+    tools:context="com.ykx.organization.pages.home.operates.wallet.UBDetailActivity">
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/list_view_item_margin_top"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/list_view_item_margin_left"
+        android:paddingRight="@dimen/list_view_item_margin_right"
+        android:layout_height="67dp">
+        <TextView
+            android:textColor="@color/theme_first_text_color"
+            android:textSize="@dimen/size_14"
+            android:gravity="center_vertical"
+            android:text="@string/activity_operate_wallet_ub_one_detail_lsh"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+
+        <TextView
+            android:text="U16051213090001"
+            android:id="@+id/wallet_lsh_view"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/default_second_text_color"
+            android:textSize="@dimen/size_14"
+            android:layout_marginTop="2dp"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+        <View
+            android:layout_alignParentBottom="true"
+            android:background="@color/default_line_color"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/list_view_item_margin_left"
+        android:paddingRight="@dimen/list_view_item_margin_right"
+        android:layout_height="67dp">
+        <TextView
+            android:textColor="@color/theme_first_text_color"
+            android:textSize="@dimen/size_14"
+            android:gravity="center_vertical"
+            android:text="@string/activity_operate_wallet_ub_one_detail_lx"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+
+        <TextView
+            android:text="充值"
+            android:id="@+id/wallet_lx_view"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/default_second_text_color"
+            android:textSize="@dimen/size_14"
+            android:layout_marginTop="2dp"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+        <View
+            android:layout_alignParentBottom="true"
+            android:background="@color/default_line_color"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/list_view_item_margin_left"
+        android:paddingRight="@dimen/list_view_item_margin_right"
+        android:layout_height="67dp">
+        <TextView
+            android:textColor="@color/theme_first_text_color"
+            android:textSize="@dimen/size_14"
+            android:gravity="center_vertical"
+            android:text="@string/activity_operate_wallet_ub_one_detail_sl"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+
+        <TextView
+            android:text="100"
+            android:id="@+id/wallet_sl_view"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/default_second_text_color"
+            android:textSize="@dimen/size_14"
+            android:layout_marginTop="2dp"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+        <View
+            android:layout_alignParentBottom="true"
+            android:background="@color/default_line_color"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/zffs_contect_view"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/list_view_item_margin_left"
+        android:paddingRight="@dimen/list_view_item_margin_right"
+        android:layout_height="67dp">
+        <TextView
+            android:textColor="@color/theme_first_text_color"
+            android:textSize="@dimen/size_14"
+            android:gravity="center_vertical"
+            android:text="@string/activity_operate_wallet_ub_one_detail_zffs"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+
+        <TextView
+            android:text="支付宝"
+            android:id="@+id/wallet_zffs_view"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/default_second_text_color"
+            android:textSize="@dimen/size_14"
+            android:layout_marginTop="2dp"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+        <View
+            android:layout_alignParentBottom="true"
+            android:background="@color/default_line_color"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/jyh_contect_view"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/list_view_item_margin_left"
+        android:paddingRight="@dimen/list_view_item_margin_right"
+        android:layout_height="67dp">
+        <TextView
+            android:textColor="@color/theme_first_text_color"
+            android:textSize="@dimen/size_14"
+            android:gravity="center_vertical"
+            android:text="@string/activity_operate_wallet_ub_one_detail_jyh"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+
+        <TextView
+            android:text="219812981298981298192"
+            android:id="@+id/wallet_jyh_view"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/default_second_text_color"
+            android:textSize="@dimen/size_14"
+            android:layout_marginTop="2dp"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+        <View
+            android:layout_alignParentBottom="true"
+            android:background="@color/default_line_color"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/xfx_contect_view"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/list_view_item_margin_left"
+        android:paddingRight="@dimen/list_view_item_margin_right"
+        android:layout_height="67dp">
+        <TextView
+            android:textColor="@color/theme_first_text_color"
+            android:textSize="@dimen/size_14"
+            android:gravity="center_vertical"
+            android:text="@string/activity_operate_wallet_ub_one_detail_xfx"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+
+        <TextView
+            android:text="xx应用"
+            android:id="@+id/wallet_xfx_view"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/default_second_text_color"
+            android:textSize="@dimen/size_14"
+            android:layout_marginTop="2dp"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+        <View
+            android:layout_alignParentBottom="true"
+            android:background="@color/default_line_color"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/list_view_item_margin_left"
+        android:paddingRight="@dimen/list_view_item_margin_right"
+        android:layout_height="67dp">
+        <TextView
+            android:textColor="@color/theme_first_text_color"
+            android:textSize="@dimen/size_14"
+            android:gravity="center_vertical"
+            android:text="@string/activity_operate_wallet_ub_one_detail_ubs"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+
+        <TextView
+            android:text="200"
+            android:id="@+id/wallet_ubs_view"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/default_second_text_color"
+            android:textSize="@dimen/size_14"
+            android:layout_marginTop="2dp"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+        <View
+            android:layout_alignParentBottom="true"
+            android:background="@color/default_line_color"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/list_view_item_margin_left"
+        android:paddingRight="@dimen/list_view_item_margin_right"
+        android:layout_height="67dp">
+        <TextView
+            android:textColor="@color/theme_first_text_color"
+            android:textSize="@dimen/size_14"
+            android:gravity="center_vertical"
+            android:text="@string/activity_operate_wallet_ub_one_detail_sj"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+
+        <TextView
+            android:id="@+id/wallet_sj_view"
+            android:text="2017-05-10"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/default_second_text_color"
+            android:textSize="@dimen/size_14"
+            android:layout_marginTop="2dp"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+        <View
+            android:layout_alignParentBottom="true"
+            android:background="@color/default_line_color"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

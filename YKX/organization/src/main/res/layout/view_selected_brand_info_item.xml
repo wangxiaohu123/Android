@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/line_view"
+        android:background="@color/theme_main_background_color"
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+    <RelativeLayout
+        android:paddingLeft="@dimen/list_view_item_margin_left"
+        android:paddingRight="@dimen/list_view_item_margin_right"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/brand_list_item_name"
+                android:text="@string/action_settings"
+                android:textSize="@dimen/size_14"
+                android:textColor="@color/theme_main_background_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@mipmap/brand_sm"
+                    android:id="@+id/brand_list_item_sm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <ImageView
+                    android:id="@+id/brand_list_item_dj"
+                    android:layout_marginLeft="10dp"
+                    android:src="@mipmap/brand_pp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:id="@+id/brand_list_item_show_view"
+            android:src="@drawable/svg_image_check"
+            android:layout_width="18dp"
+            android:layout_height="18dp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

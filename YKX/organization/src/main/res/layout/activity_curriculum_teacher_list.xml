@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_campus_teacher_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ykx.organization.pages.home.operates.curriculum.CurriculumTeacherListActivity">
+
+
+    <ListView
+        android:id="@+id/teacher_listview"
+        android:divider="@null"
+        android:background="@color/default_line_color"
+        android:layout_above="@+id/buttom_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
+
+</RelativeLayout>

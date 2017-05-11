@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_authentication_register_next"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ykx.organization.pages.authentication.AuthenticationRegisterNextActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:textSize="@dimen/size_14"
+        android:text="@string/authentication_register_next_bxxk_notice_des"
+        android:textColor="@color/default_second_text_color"
+        android:background="@color/default_line_color"
+        android:layout_height="40dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/list_view_item_margin_left"
+        android:layout_marginRight="@dimen/list_view_item_margin_right"
+        android:layout_height="70dp">
+
+        <TextView
+            android:textSize="@dimen/size_14"
+            android:gravity="center_vertical"
+            android:text="@string/authentication_register_next_bxxk_ywlxr"
+            android:id="@+id/ywlxt_view"
+            android:textColor="@color/theme_first_text_color"
+            android:layout_width="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_height="match_parent"/>
+
+        <EditText
+            android:hint="@string/authentication_register_next_bxxk_ywlxr_hint"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical|right"
+            android:id="@+id/persion_name_edittext"
+            android:background="@null"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/size_14"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"/>
+
+        <View
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:background="@color/default_line_color"
+            android:layout_height="1dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/list_view_item_margin_left"
+        android:layout_marginRight="@dimen/list_view_item_margin_right"
+        android:layout_height="70dp">
+
+        <TextView
+            android:textSize="@dimen/size_14"
+            android:gravity="center_vertical"
+            android:text="@string/authentication_register_next_bxxk_lxsj"
+            android:id="@+id/lxsj_view"
+            android:textColor="@color/theme_first_text_color"
+            android:layout_width="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_height="match_parent"/>
+
+        <EditText
+            android:hint="@string/authentication_register_next_bxxk_lxsj_hint"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical|right"
+            android:background="@null"
+            android:id="@+id/persion_telphone_edittext"
+            android:textCursorDrawable="@null"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:textSize="@dimen/size_14"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"/>
+
+        <View
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:background="@color/default_line_color"
+            android:layout_height="1dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/list_view_item_margin_left"
+        android:layout_marginRight="@dimen/list_view_item_margin_right"
+        android:layout_height="70dp">
+
+        <TextView
+            android:textSize="@dimen/size_14"
+            android:gravity="center_vertical"
+            android:text="@string/authentication_register_next_bxxk_zjdh"
+            android:id="@+id/zjdh_view"
+            android:textColor="@color/theme_first_text_color"
+            android:layout_width="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_height="match_parent"/>
+
+        <EditText
+            android:hint="@string/authentication_register_next_bxxk_zjdh_hint"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical|right"
+            android:id="@+id/persion_phone_edittext"
+            android:background="@null"
+            android:inputType="phone"
+            android:maxLength="12"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/size_14"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"/>
+
+        <View
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:background="@color/default_line_color"
+            android:layout_height="1dp"/>
+    </RelativeLayout>
+
+
+
+    <com.ykx.baselibs.views.SubmitStateView
+        android:layout_marginTop="60dip"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:onClick="doAction"
+        android:id="@+id/persion_submitview"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+
+</LinearLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/select_type_view"
+            android:orientation="vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:padding="1dp"
+            android:background="@drawable/corner_view_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:background="@color/default_line_color"
+                android:gravity="center_vertical"
+                android:layout_height="40dp">
+                <TextView
+                    android:text="@string/curriculum_activity_add_campus_time_view_cftype"
+                    android:layout_width="wrap_content"
+                    android:textSize="@dimen/size_12"
+                    android:gravity="center"
+                    android:textColor="@color/theme_first_text_color"
+                    android:layout_height="match_parent"/>
+
+                <LinearLayout
+                    android:layout_toLeftOf="@+id/type_month_view"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:text="@string/curriculum_activity_add_campus_time_view_week"
+                        android:paddingTop="5dp"
+                        android:textSize="@dimen/size_12"
+                        android:id="@+id/type_week_view"
+                        android:gravity="center"
+                        android:textColor="@color/default_second_text_color"
+                        android:layout_width="40dp"
+                        android:layout_height="35dp"/>
+
+                    <View
+                        android:background="@color/theme_main_background_color"
+                        android:id="@+id/week_buttom_line_view"
+                        android:layout_width="40dp"
+                        android:layout_height="5dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/type_month_view"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="vertical"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/type_month_textview"
+                        android:textSize="@dimen/size_12"
+                        android:paddingTop="5dp"
+                        android:textColor="@color/default_second_text_color"
+                        android:text="@string/curriculum_activity_add_campus_time_view_month"
+                        android:gravity="center"
+                        android:layout_width="40dp"
+                        android:layout_height="35dp"/>
+                    <View
+                        android:background="@color/theme_main_background_color"
+                        android:id="@+id/month_buttom_line_view"
+                        android:layout_width="40dp"
+                        android:visibility="gone"
+                        android:layout_height="5dp"/>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <GridView
+                android:id="@+id/data_grideview"
+                android:layout_width="match_parent"
+                android:layout_height="150dp">
+
+            </GridView>
+
+        </LinearLayout>
+</LinearLayout>
+</LinearLayout>

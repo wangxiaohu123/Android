@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_campus"
+    android:background="@color/default_line_color"
+    tools:context="com.ykx.organization.pages.home.operates.campus.AddCampusActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:orientation="vertical"
+        android:background="@color/default_line_color"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@color/default_line_color"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="com.ykx.organization.pages.home.operates.campus.AddCampusActivity">
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/list_view_item_margin_top"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:paddingLeft="@dimen/list_view_item_margin_left"
+                android:paddingRight="@dimen/list_view_item_margin_right"
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_marginBottom="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="@string/curriculum_activity_add_item1_title"
+                        android:textSize="@dimen/size_14"
+                        android:id="@+id/add_curriculum_bkxx"
+                        android:textColor="@color/theme_first_text_color"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+                    <LinearLayout
+                        android:onClick="setCurriculumInfoAction"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:src="@drawable/svg_home_operate_curriculum_edit"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"/>
+
+                        <TextView
+                            android:text="@string/curriculum_activity_add_edit"
+                            android:layout_marginLeft="3dp"
+                            android:textSize="@dimen/size_14"
+                            android:textColor="@color/theme_main_background_color"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+
+                </RelativeLayout>
+                <View
+                    android:background="@color/default_line_color"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+                <TextView
+                    android:id="@+id/default_null_textview"
+                    android:textSize="@dimen/size_14"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/curriculum_activity_add_default_null"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:id="@+id/campus_info_content_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/bk_name_textview"
+                        android:textSize="@dimen/size_12"
+                        android:layout_marginBottom="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/bk_type_name_textview"
+                        android:textSize="@dimen/size_12"
+                        android:layout_marginBottom="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/bk_des_textview"
+                        android:textSize="@dimen/size_12"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:layout_marginBottom="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/list_view_item_margin_top"
+                android:paddingRight="@dimen/list_view_item_margin_right"
+                android:paddingLeft="@dimen/list_view_item_margin_left"
+                android:paddingTop="20dp"
+                android:visibility="gone"
+                android:id="@+id/bk_time_content_view"
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_marginBottom="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="@string/curriculum_activity_add_item1_title_time"
+                        android:id="@+id/add_curriculum_sksj"
+                        android:textSize="@dimen/size_14"
+                        android:textColor="@color/theme_first_text_color"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+                    <LinearLayout
+                        android:onClick="setCurriculumTimeAction"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:src="@drawable/svg_home_operate_curriculum_edit"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"/>
+
+                        <TextView
+                            android:text="@string/curriculum_activity_add_edit"
+                            android:layout_marginLeft="3dp"
+                            android:textSize="@dimen/size_14"
+                            android:textColor="@color/theme_main_background_color"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+
+                </RelativeLayout>
+                <View
+                    android:background="@color/default_line_color"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+                <TextView
+                    android:id="@+id/default_time_textview"
+                    android:textSize="@dimen/size_14"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="@string/curriculum_activity_add_default_null"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <!--<LinearLayout-->
+                <!--android:id="@+id/time_content_view"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:orientation="vertical"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content">-->
+
+                <!--</LinearLayout>-->
+                <LinearLayout
+                    android:id="@+id/time_content_view"
+                    android:layout_marginTop="10dp"
+                    android:onClick="showTimeListAction"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:text="08:00-12:00"
+                            android:textColor="@color/theme_first_text_color"
+                            android:id="@+id/time_textview"
+                            android:textSize="@dimen/size_14"
+                            android:gravity="center_vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"/>
+                        <View
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            android:layout_width="1dp"
+                            android:background="@color/default_line_color"
+                            android:layout_height="match_parent"/>
+
+                        <LinearLayout
+                            android:background="@color/white"
+                            android:orientation="vertical"
+                            android:gravity="center_vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:text="每周一"
+                                android:id="@+id/type_textview"
+                                android:textColor="@color/default_second_text_color"
+                                android:textSize="@dimen/size_12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                            <TextView
+                                android:text="2017-03-30 至 2017-04-31"
+                                android:id="@+id/date_textview"
+                                android:textColor="@color/default_second_text_color"
+                                android:textSize="@dimen/size_12"
+                                android:layout_marginTop="20dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:background="@color/default_line_color"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="1dp"/>
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="12dp"
+                        android:layout_height="20dp">
+                        <TextView
+                            android:text="..."
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <!--<ImageView-->
+                            <!--android:src="@drawable/svg_home_curriculum_more_small"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"/>-->
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/list_view_item_margin_top"
+                android:paddingTop="20dp"
+                android:paddingLeft="@dimen/list_view_item_margin_left"
+                android:paddingRight="@dimen/list_view_item_margin_right"
+                android:paddingBottom="@dimen/list_view_item_margin_buttom"
+                android:visibility="gone"
+                android:id="@+id/bk_teacher_content_view"
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_marginBottom="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="@string/curriculum_activity_add_item1_title_teacher"
+                        android:textSize="@dimen/size_14"
+                        android:id="@+id/add_curriculum_skls"
+                        android:textColor="@color/theme_first_text_color"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+                    <LinearLayout
+                        android:onClick="setCurriculumTeacherAction"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:src="@drawable/svg_home_operate_curriculum_add"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"/>
+
+                        <TextView
+                            android:text="@string/curriculum_activity_add_add"
+                            android:layout_marginLeft="3dp"
+                            android:textSize="@dimen/size_14"
+                            android:textColor="@color/theme_main_background_color"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+
+                </RelativeLayout>
+                <View
+                    android:background="@color/default_line_color"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+                <TextView
+                    android:textSize="@dimen/size_14"
+                    android:id="@+id/teacher_list_default_view"
+                    android:layout_marginTop="13dp"
+                    android:text="@string/curriculum_activity_add_default_null"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:id="@+id/teacher_list_view"
+                    android:layout_marginTop="13dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!--<ImageView-->
+                        <!--android:src="@drawable/svg_teacher"-->
+                        <!--android:background="@drawable/corner_imageview_teacher_bg"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"/>-->
+                    <!--<ImageView-->
+                        <!--android:src="@drawable/svg_teacher"-->
+                        <!--android:layout_marginLeft="10dp"-->
+                        <!--android:background="@drawable/corner_imageview_teacher_bg"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"/>-->
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/list_view_item_margin_top"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:paddingLeft="@dimen/list_view_item_margin_left"
+                android:paddingRight="@dimen/list_view_item_margin_right"
+                android:id="@+id/bk_online_content_view"
+                android:visibility="gone"
+                android:layout_marginBottom="@dimen/list_view_item_margin_buttom"
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_marginBottom="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="@string/curriculum_activity_add_item1_title_online_bm"
+                        android:textSize="@dimen/size_14"
+                        android:textColor="@color/theme_first_text_color"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+                    <ImageView
+                        android:id="@+id/online_pay_imagevew"
+                        android:src="@drawable/svg_switch_on"
+                        android:onClick="setCampusOnLineAction"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="37dp"
+                        android:layout_height="20dp"/>
+                </RelativeLayout>
+                <View
+                    android:background="@color/default_line_color"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textSize="@dimen/size_14"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="@string/curriculum_activity_add_item1_title_online_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:textSize="@dimen/size_14"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/theme_main_background_color"
+                        android:id="@+id/bk_price_view"
+                        android:text="100元/次"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+

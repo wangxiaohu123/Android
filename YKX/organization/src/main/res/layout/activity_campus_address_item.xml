@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:src="@drawable/svg_my_location"
+            android:id="@+id/flag_view"
+            android:layout_marginLeft="@dimen/list_view_item_margin_left"
+            android:layout_marginRight="0dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="55dp">
+            <TextView
+                android:text="位置信息"
+                android:textSize="@dimen/size_14"
+                android:textColor="@color/theme_first_text_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/name_textView"/>
+
+            <TextView
+                android:text="地址信息"
+                android:textSize="@dimen/size_12"
+                android:layout_marginTop="3dp"
+                android:textColor="@color/default_second_text_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/address_textView"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_marginLeft="@dimen/list_view_item_margin_left"
+        android:layout_marginRight="@dimen/list_view_item_margin_right"
+        android:background="@color/default_line_color"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+</LinearLayout>

@@ -1,0 +1,1 @@
+include ':organization', ':user', ':baselibs', ':pickerview', ':imageload', ':sharesdk', ':easeui',':chatdemoui'

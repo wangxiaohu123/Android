@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="75dp">
+        <LinearLayout
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/list_view_item_margin_left"
+            android:paddingRight="@dimen/list_view_item_margin_right"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.ykx.organization.libs.views.ImageViewPlus
+                android:src="@drawable/svg_teacher"
+                android:id="@+id/photo_view"
+                android:background="@drawable/corner_imageview_teacher_bg"
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginLeft="15dp"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/name_textview"
+                    android:text="xxx"
+                    style="@style/ListViewItemTitleTextStyle"
+                    android:layout_marginBottom="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:src="@drawable/svg_female"
+                    android:id="@+id/gander_view"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:layout_marginRight="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/check_imageview"
+                android:visibility="gone"
+                android:src="@drawable/svg_image_check"
+                android:layout_width="18dp"
+                android:layout_height="18dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

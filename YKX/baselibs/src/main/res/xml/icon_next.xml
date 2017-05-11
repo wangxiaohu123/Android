@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<font-icon
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:text="@string/fa_chevron_right"
+        app:textSize="10dp"
+        app:textColor="@color/white"
+        app:autoMirrored="true"
+        app:needMirroring="@bool/layout_direction_rtl"
+        />

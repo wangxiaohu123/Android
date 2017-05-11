@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<font-icon
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:text="@string/fa_angle_left"
+        app:textSize="30dp"
+        app:textColor="@color/default_second_text_color"
+        app:autoMirrored="true"
+        app:needMirroring="@bool/layout_direction_rtl"
+        />

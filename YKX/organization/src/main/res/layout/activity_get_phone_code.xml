@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/activity_get_phone_code"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ykx.organization.pages.usercenter.setting.GetPhoneCodeActivity">
+    <TextView
+        android:gravity="center_vertical"
+        android:background="@color/default_line_color"
+        android:paddingLeft="20dp"
+        android:textSize="@dimen/size_14"
+        android:textColor="@color/default_second_text_color"
+        android:text="@string/persion_center_info_jg_setting_change_pw_notices"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <com.ykx.baselibs.views.CustomEditText
+            android:layout_marginTop="10dip"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/change_phone_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </com.ykx.baselibs.views.CustomEditText>
+
+        <TextView
+            android:onClick="getPhoneCodeAction"
+            android:layout_alignParentRight="true"
+            android:text="@string/register_edittext_get_verification_code"
+            android:textColor="@color/theme_main_background_color"
+            android:textSize="@dimen/size_14"
+            android:gravity="center"
+            android:layout_marginRight="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"/>
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_marginTop="60dip"
+        android:onClick="nextPWAction"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:text="@string/sys_next"
+        android:textColor="@color/white"
+        android:textSize="@dimen/size_16"
+        android:gravity="center"
+        android:background="@drawable/textview_selector"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+</LinearLayout>

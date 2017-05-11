@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center_vertical"
+              android:orientation="vertical" >
+    <TextView
+        android:id="@+id/catalog"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/default_line_color"
+        android:textColor="@color/default_second_text_color"
+        android:layout_weight="1.0"
+        android:paddingLeft="15dip"
+        android:textSize="@dimen/size_14"
+        android:paddingTop="8dip"
+        android:paddingBottom="8dip"
+        android:text="当前位置"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <ImageView
+            android:src="@drawable/svg_my_location"
+            android:layout_width="15dp"
+            android:layout_height="15dp"/>
+
+        <TextView
+            android:id="@+id/mylocation_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:textColor="@color/theme_first_text_color"
+            android:paddingRight="30dp"
+            android:paddingLeft="10dip"
+            android:textSize="@dimen/size_14"
+            android:text=""/>
+    </LinearLayout>
+</LinearLayout>

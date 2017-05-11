@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:gravity="center"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <TextView
+        android:text="1"
+        android:textColor="@color/default_second_text_color"
+        android:layout_margin="3dp"
+        android:textSize="@dimen/size_12"
+        android:layout_width="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_height="40dp"
+        android:id="@+id/campus_time_textview"/>
+    <ImageView
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:visibility="invisible"
+        android:src="@drawable/svg_image_check"
+        android:id="@+id/campus_time_imagview"/>
+
+</LinearLayout>

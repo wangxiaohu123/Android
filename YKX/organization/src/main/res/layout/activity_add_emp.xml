@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_campus_info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ykx.organization.pages.home.operates.curriculum.CurriculumIfoActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context="com.ykx.organization.pages.home.operates.campus.CampusInfoActivity">
+
+            <TextView
+                android:text="@string/emp_manager_activity_add_notice"
+                android:textColor="@color/default_second_text_color"
+                android:gravity="center"
+                android:background="@color/default_line_color"
+                android:paddingLeft="10dp"
+                android:textSize="@dimen/size_14"
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:id="@+id/textView"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/list_view_item_margin_left"
+                android:layout_marginRight="@dimen/list_view_item_margin_right"
+                android:layout_height="75dp">
+
+                <TextView
+                    android:textSize="@dimen/size_14"
+                    android:gravity="center_vertical"
+                    android:text="@string/emp_manager_activity_add_name"
+                    android:textColor="@color/theme_first_text_color"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/name"
+                    android:layout_alignParentLeft="true"
+                    android:layout_height="match_parent"/>
+
+
+                <EditText
+                    android:hint="@string/emp_manager_activity_add_hint3"
+                    android:gravity="center_vertical|right"
+                    android:textColor="@color/default_second_text_color"
+                    android:id="@+id/name_editview"
+                    android:background="@null"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/size_14"
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"/>
+
+                <View
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:background="@color/default_line_color"
+                    android:layout_height="1dp"/>
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:onClick="selectedGenderAction"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/list_view_item_margin_left"
+                android:layout_marginRight="@dimen/list_view_item_margin_right"
+                android:layout_height="75dp">
+
+                <TextView
+                    android:textSize="@dimen/size_14"
+                    android:gravity="center_vertical"
+                    android:text="@string/emp_manager_activity_add_gander"
+                    android:id="@+id/gender"
+                    android:textColor="@color/theme_first_text_color"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_height="match_parent"/>
+
+                <TextView
+                    android:text="@string/emp_manager_activity_add_hint1"
+                    android:gravity="center_vertical|right"
+                    android:textColor="@color/default_second_text_color"
+                    android:layout_toLeftOf="@+id/bklm"
+                    android:id="@+id/gender_view"
+                    android:textSize="@dimen/size_14"
+                    android:layout_width="230dp"
+                    android:layout_height="match_parent"/>
+
+                <LinearLayout
+                    android:id="@+id/bklm"
+                    android:gravity="center_vertical|right"
+                    android:layout_marginLeft="7dp"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:src="@drawable/svg_detail"
+                        android:layout_width="6dp"
+                        android:layout_height="12dp"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:background="@color/default_line_color"
+                    android:layout_height="1dp"/>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/list_view_item_margin_left"
+                android:layout_marginRight="@dimen/list_view_item_margin_right"
+                android:layout_height="75dp">
+
+                <TextView
+                    android:textSize="@dimen/size_14"
+                    android:gravity="center_vertical"
+                    android:text="@string/emp_manager_activity_add_phone"
+                    android:textColor="@color/theme_first_text_color"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/phone"
+                    android:layout_alignParentLeft="true"
+                    android:layout_height="match_parent"/>
+
+
+                <EditText
+                    android:hint="@string/emp_manager_activity_add_hint3"
+                    android:gravity="center_vertical|right"
+                    android:textColor="@color/default_second_text_color"
+                    android:id="@+id/phone_edittext"
+                    android:background="@null"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/size_14"
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"/>
+
+                <View
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:background="@color/default_line_color"
+                    android:layout_height="1dp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:onClick="selectedZWAction"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/list_view_item_margin_left"
+                android:layout_marginRight="@dimen/list_view_item_margin_right"
+                android:layout_height="75dp">
+
+                <TextView
+                    android:textSize="@dimen/size_14"
+                    android:gravity="center_vertical"
+                    android:text="@string/emp_manager_activity_add_zw"
+                    android:id="@+id/jobs"
+                    android:textColor="@color/theme_first_text_color"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_height="match_parent"/>
+
+                <TextView
+                    android:text="@string/emp_manager_activity_add_hint1"
+                    android:gravity="center_vertical|right"
+                    android:textColor="@color/default_second_text_color"
+                    android:layout_toLeftOf="@+id/bkjj"
+                    android:id="@+id/zw_view"
+                    android:textSize="@dimen/size_14"
+                    android:layout_width="230dp"
+                    android:layout_height="match_parent"/>
+
+                <LinearLayout
+                    android:id="@+id/bkjj"
+                    android:gravity="center_vertical|right"
+                    android:layout_marginLeft="7dp"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:src="@drawable/svg_detail"
+                        android:layout_width="6dp"
+                        android:layout_height="12dp"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:background="@color/default_line_color"
+                    android:layout_height="1dp"/>
+            </RelativeLayout>
+
+        <RelativeLayout
+            android:onClick="selectedSKKMction"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/list_view_item_margin_left"
+            android:layout_marginRight="@dimen/list_view_item_margin_right"
+            android:layout_height="75dp">
+
+            <TextView
+                android:textSize="@dimen/size_14"
+                android:gravity="center_vertical"
+                android:text="@string/emp_manager_activity_add_skkm"
+                android:textColor="@color/theme_first_text_color"
+                android:layout_width="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:text="@string/emp_manager_activity_add_hint1"
+                android:id="@+id/skkm_view"
+                android:textColor="@color/default_second_text_color"
+                android:gravity="center_vertical|right"
+                android:layout_toLeftOf="@+id/skkm"
+                android:textSize="@dimen/size_14"
+                android:layout_width="230dp"
+                android:layout_height="match_parent"/>
+
+            <LinearLayout
+                android:id="@+id/skkm"
+                android:gravity="center_vertical|right"
+                android:layout_marginLeft="7dp"
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:src="@drawable/svg_detail"
+                    android:layout_width="6dp"
+                    android:layout_height="12dp"/>
+            </LinearLayout>
+
+            <View
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:background="@color/default_line_color"
+                android:layout_height="1dp"/>
+        </RelativeLayout>
+
+            <RelativeLayout
+                android:onClick="selectedSSXQAction"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/list_view_item_margin_left"
+                android:layout_marginRight="@dimen/list_view_item_margin_right"
+                android:layout_height="75dp">
+
+                <TextView
+                    android:textSize="@dimen/size_14"
+                    android:gravity="center_vertical"
+                    android:text="@string/emp_manager_activity_add_xmmc"
+                    android:id="@+id/add_emp_info_ssxq"
+                    android:textColor="@color/theme_first_text_color"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_height="match_parent"/>
+
+                <TextView
+                    android:text="@string/emp_manager_activity_add_hint1"
+                    android:textColor="@color/default_second_text_color"
+                    android:gravity="center_vertical|right"
+                    android:layout_toLeftOf="@+id/zsrs"
+                    android:id="@+id/ssxq_view"
+                    android:textSize="@dimen/size_14"
+                    android:layout_width="230dp"
+                    android:layout_height="match_parent"/>
+
+                <LinearLayout
+                    android:id="@+id/zsrs"
+                    android:gravity="center_vertical|right"
+                    android:layout_marginLeft="7dp"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:src="@drawable/svg_detail"
+                        android:layout_width="6dp"
+                        android:layout_height="12dp"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:background="@color/default_line_color"
+                    android:layout_height="1dp"/>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:onClick="selectedJJAction"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/list_view_item_margin_left"
+                android:layout_marginRight="@dimen/list_view_item_margin_right"
+                android:layout_height="75dp">
+
+                <TextView
+                    android:textSize="@dimen/size_14"
+                    android:gravity="center_vertical"
+                    android:text="@string/emp_manager_activity_add_jj"
+                    android:id="@+id/add_curriculum_info_sffs"
+                    android:textColor="@color/theme_first_text_color"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_height="match_parent"/>
+
+                <TextView
+                    android:text="@string/emp_manager_activity_add_hint1"
+                    android:gravity="center_vertical|right"
+                    android:textColor="@color/default_second_text_color"
+                    android:layout_toLeftOf="@+id/sffs"
+                    android:id="@+id/jj_view"
+                    android:textSize="@dimen/size_14"
+                    android:layout_width="230dp"
+                    android:layout_height="match_parent"/>
+
+                <LinearLayout
+                    android:id="@+id/sffs"
+                    android:gravity="center_vertical|right"
+                    android:layout_marginLeft="7dp"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:src="@drawable/svg_detail"
+                        android:layout_width="6dp"
+                        android:layout_height="12dp"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:background="@color/default_line_color"
+                    android:layout_height="1dp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:onClick="selectedLLAction"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/list_view_item_margin_left"
+                android:layout_marginRight="@dimen/list_view_item_margin_right"
+                android:layout_height="75dp">
+
+                <TextView
+                    android:textSize="@dimen/size_14"
+                    android:gravity="center_vertical"
+                    android:text="@string/emp_manager_activity_add_ll"
+                    android:textColor="@color/theme_first_text_color"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_height="match_parent"/>
+
+                <TextView
+                    android:text="@string/emp_manager_activity_add_hint1"
+                    android:gravity="center_vertical|right"
+                    android:textColor="@color/default_second_text_color"
+                    android:textSize="@dimen/size_14"
+                    android:id="@+id/ll_view"
+                    android:layout_toLeftOf="@+id/next8"
+                    android:layout_width="230dp"
+                    android:layout_height="match_parent"/>
+
+                <LinearLayout
+                    android:id="@+id/next8"
+                    android:gravity="center_vertical|right"
+                    android:layout_marginLeft="7dp"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:src="@drawable/svg_detail"
+                        android:layout_width="6dp"
+                        android:layout_height="12dp"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:background="@color/default_line_color"
+                    android:layout_height="1dp"/>
+            </RelativeLayout>
+
+        <RelativeLayout
+            android:onClick="selectedRYAction"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/list_view_item_margin_left"
+            android:layout_marginRight="@dimen/list_view_item_margin_right"
+            android:layout_height="75dp">
+
+            <TextView
+                android:textSize="@dimen/size_14"
+                android:gravity="center_vertical"
+                android:text="@string/emp_manager_activity_add_ry"
+                android:id="@+id/add_curriculum_info_bkcs"
+                android:textColor="@color/theme_first_text_color"
+                android:layout_width="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:text="@string/emp_manager_activity_add_hint1"
+                android:gravity="center_vertical|right"
+                android:textColor="@color/default_second_text_color"
+                android:layout_toLeftOf="@+id/next"
+                android:id="@+id/ry_view"
+                android:textSize="@dimen/size_14"
+                android:layout_width="230dp"
+                android:layout_height="match_parent"/>
+
+            <LinearLayout
+                android:id="@+id/next"
+                android:gravity="center_vertical|right"
+                android:layout_marginLeft="7dp"
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:src="@drawable/svg_detail"
+                    android:layout_width="6dp"
+                    android:layout_height="12dp"/>
+            </LinearLayout>
+
+            <View
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:background="@color/default_line_color"
+                android:layout_height="1dp"/>
+        </RelativeLayout>
+
+            <RelativeLayout
+                android:onClick="selectedRoleAction"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/list_view_item_margin_left"
+                android:layout_marginRight="@dimen/list_view_item_margin_right"
+                android:layout_height="75dp">
+
+                <TextView
+                    android:textSize="@dimen/size_14"
+                    android:gravity="center_vertical"
+                    android:text="@string/emp_manager_activity_add_gnqx"
+                    android:textColor="@color/theme_first_text_color"
+                    android:id="@+id/role"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_height="match_parent"/>
+
+                <TextView
+                    android:text="@string/emp_manager_activity_add_gnqx_hint"
+                    android:gravity="center_vertical|right"
+                    android:textColor="@color/default_second_text_color"
+                    android:layout_toLeftOf="@+id/next_view"
+                    android:id="@+id/role_view"
+                    android:textSize="@dimen/size_14"
+                    android:layout_width="230dp"
+                    android:layout_height="match_parent"/>
+
+                <LinearLayout
+                    android:id="@+id/next_view"
+                    android:gravity="center_vertical|right"
+                    android:layout_marginLeft="7dp"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:src="@drawable/svg_detail"
+                        android:layout_width="6dp"
+                        android:layout_height="12dp"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:background="@color/default_line_color"
+                    android:layout_height="1dp"/>
+            </RelativeLayout>
+
+            <TextView
+                android:onClick="addEmpAction"
+                android:text="@string/emp_manager_activity_add_bc"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_16"
+                android:layout_marginTop="60dp"
+                android:layout_marginBottom="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:gravity="center"
+                android:background="@drawable/textview_selector"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/date_content_view"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:onClick="doViewAction"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </RelativeLayout>
+</FrameLayout>

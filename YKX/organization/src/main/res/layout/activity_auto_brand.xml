@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_auto_brand"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ykx.organization.pages.home.operates.brandmanager.AutoBrandActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:textSize="@dimen/size_14"
+            android:text="@string/brandmanager_activity_base_info_item_mamager_notice"
+            android:textColor="@color/default_second_text_color"
+            android:background="@color/default_line_color"
+            android:layout_height="36dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/list_view_item_margin_left"
+            android:layout_marginRight="@dimen/list_view_item_margin_right"
+            android:layout_height="70dp">
+
+            <TextView
+                android:textSize="@dimen/size_14"
+                android:gravity="center_vertical"
+                android:text="@string/brandmanager_activity_base_info_item_ppmc"
+                android:textColor="@color/theme_first_text_color"
+                android:layout_width="wrap_content"
+                android:id="@+id/name_textview"
+                android:layout_alignParentLeft="true"
+                android:layout_height="match_parent"/>
+
+            <EditText
+                android:hint="@string/brandmanager_activity_base_info_item_ppmc_hint"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical|right"
+                android:id="@+id/input_name_edittext"
+                android:background="@null"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/size_14"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"/>
+
+            <View
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:background="@color/default_line_color"
+                android:layout_height="1dp"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/list_view_item_margin_left"
+            android:layout_marginRight="@dimen/list_view_item_margin_right"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:weightSum="3"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textSize="@dimen/size_14"
+                        android:gravity="center_vertical"
+                        android:text="@string/brandmanager_activity_base_info_item_pglogo"
+                        android:textColor="@color/theme_first_text_color"
+                        android:layout_width="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_height="wrap_content"/>
+
+
+                    <TextView
+                        android:textSize="@dimen/size_14"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/authentication_register_main_bxxk_cksl"
+                        android:visibility="gone"
+                        android:textColor="@color/theme_main_background_color"
+                        android:layout_width="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:onClick="takenBZXKZAction"
+                    android:id="@+id/brand_pic1"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imageView1"
+                        android:src="@drawable/svg_camera"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"/>
+
+                    <ImageView
+                        android:id="@+id/showpicimageview1"
+                        android:visibility="gone"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/default_line_color"
+                android:layout_height="1dp"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:onClick="selectedTypeAction"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/list_view_item_margin_left"
+            android:layout_marginRight="@dimen/list_view_item_margin_right"
+            android:layout_height="70dp">
+
+            <TextView
+                android:textSize="@dimen/size_14"
+                android:gravity="center_vertical"
+                android:text="@string/brandmanager_activity_base_info_item_mamager_ppsblx"
+                android:textColor="@color/theme_first_text_color"
+                android:layout_width="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_height="match_parent"/>
+
+
+            <TextView
+                android:text="@string/brandmanager_activity_base_info_item_mamager_ppsblx_hint"
+                android:layout_toRightOf="@+id/adcode_textview"
+                android:layout_marginLeft="15dp"
+                android:gravity="center_vertical|right"
+                android:layout_toLeftOf="@+id/next_view"
+                android:background="@null"
+                android:textCursorDrawable="@null"
+                android:id="@+id/brand_type_view"
+                android:textSize="@dimen/size_14"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"/>
+
+            <ImageView
+                android:layout_marginTop="27dp"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/next_view"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/svg_detail"
+                android:layout_width="6dp"
+                android:layout_height="12dp"/>
+
+            <View
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:background="@color/default_line_color"
+                android:layout_height="1dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/list_view_item_margin_left"
+            android:layout_marginRight="@dimen/list_view_item_margin_right"
+            android:layout_height="70dp">
+
+            <TextView
+                android:id="@+id/ppsbzch_view"
+                android:textSize="@dimen/size_14"
+                android:gravity="center_vertical"
+                android:text="@string/brandmanager_activity_base_info_item_mamager_ppsbzch"
+                android:textColor="@color/theme_first_text_color"
+                android:layout_width="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_height="match_parent"/>
+
+            <EditText
+                android:hint="@string/sys_input_hint"
+                android:id="@+id/ppsbzch_edittext_view"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical|right"
+                android:background="@null"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/size_14"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"/>
+
+            <View
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:background="@color/default_line_color"
+                android:layout_height="1dp"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/list_view_item_margin_left"
+            android:layout_marginRight="@dimen/list_view_item_margin_right"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:weightSum="3"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textSize="@dimen/size_14"
+                        android:id="@+id/ppsbzcz_view"
+                        android:gravity="center_vertical"
+                        android:text="@string/brandmanager_activity_base_info_item_mamager_ppsbzcz"
+                        android:textColor="@color/theme_first_text_color"
+                        android:layout_width="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:onClick="takenBZXKZAction"
+                    android:id="@+id/brand_pic2"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:src="@drawable/svg_camera"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"/>
+
+                    <ImageView
+                        android:id="@+id/showpicimageview2"
+                        android:visibility="gone"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/default_line_color"
+                android:layout_height="1dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/list_view_item_margin_left"
+            android:layout_marginRight="@dimen/list_view_item_margin_right"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:weightSum="3"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textSize="@dimen/size_14"
+                        android:gravity="center_vertical"
+                        android:text="@string/brandmanager_activity_base_info_item_mamager_gz"
+                        android:id="@+id/xkz_textview"
+                        android:textColor="@color/theme_first_text_color"
+                        android:layout_width="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_height="wrap_content"/>
+
+
+
+                    <LinearLayout
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="8dp"
+                        android:layout_width="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textSize="@dimen/size_14"
+                            android:gravity="center_vertical"
+                            android:text="@string/brandmanager_activity_base_info_item_mamager_cksl"
+                            android:visibility="gone"
+                            android:textColor="@color/theme_main_background_color"
+                            android:layout_width="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:textSize="@dimen/size_14"
+                            android:gravity="center_vertical"
+                            android:text="@string/brandmanager_activity_base_info_item_mamager_sqsmb"
+                            android:onClick="sendEmailAction"
+                            android:textColor="@color/theme_main_background_color"
+                            android:layout_width="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:onClick="takenBZXKZAction"
+                    android:id="@+id/brand_pic3"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:src="@drawable/svg_camera"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"/>
+
+                    <ImageView
+                        android:id="@+id/showpicimageview3"
+                        android:visibility="gone"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/default_line_color"
+                android:layout_height="1dp"/>
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_marginTop="40dip"
+            android:layout_marginBottom="40dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:id="@+id/auto_view"
+            android:onClick="toNextAutoBrandAction"
+            android:text="@string/brandmanager_activity_base_info_item_mamager_xyb"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_16"
+            android:gravity="center"
+            android:background="@drawable/textview_selector"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+
+    </LinearLayout>
+</ScrollView>

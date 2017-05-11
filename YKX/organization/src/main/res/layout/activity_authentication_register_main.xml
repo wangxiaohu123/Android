@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_authentication_register_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ykx.organization.pages.authentication.AuthenticationRegisterMainActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:textSize="@dimen/size_14"
+            android:text="@string/authentication_register_main_bxxk_notice_des"
+            android:textColor="@color/default_second_text_color"
+            android:background="@color/default_line_color"
+            android:layout_height="35dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/list_view_item_margin_left"
+            android:layout_marginRight="@dimen/list_view_item_margin_right"
+            android:layout_height="70dp">
+
+            <TextView
+                android:textSize="@dimen/size_14"
+                android:gravity="center_vertical"
+                android:text="@string/authentication_register_main_bxxk_xxmc"
+                android:textColor="@color/theme_first_text_color"
+                android:layout_width="wrap_content"
+                android:id="@+id/name_textview"
+                android:layout_alignParentLeft="true"
+                android:layout_height="match_parent"/>
+
+            <EditText
+                android:hint="@string/authentication_register_main_bxxk_xxmc_hint"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical|right"
+                android:id="@+id/input_name_edittext"
+                android:background="@null"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/size_14"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"/>
+
+            <View
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:background="@color/default_line_color"
+                android:layout_height="1dp"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/list_view_item_margin_left"
+            android:layout_marginRight="@dimen/list_view_item_margin_right"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:weightSum="3"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textSize="@dimen/size_14"
+                        android:gravity="center_vertical"
+                        android:text="@string/authentication_register_main_bxxk_bxxkz"
+                        android:id="@+id/xkz_textview"
+                        android:textColor="@color/theme_first_text_color"
+                        android:layout_width="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_height="wrap_content"/>
+
+
+                    <TextView
+                        android:textSize="@dimen/size_14"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/authentication_register_main_bxxk_cksl"
+                        android:visibility="gone"
+                        android:onClick="showBXXKZAction"
+                        android:textColor="@color/theme_main_background_color"
+                        android:layout_width="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:onClick="takenBZXKZAction"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/showpicimageview"
+                        android:src="@drawable/svg_camera"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"/>
+
+                    <ImageView
+                        android:id="@+id/xkz_imageview"
+                        android:visibility="gone"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/default_line_color"
+                android:layout_height="1dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/list_view_item_margin_left"
+            android:layout_marginRight="@dimen/list_view_item_margin_right"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:weightSum="3"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:textSize="@dimen/size_14"
+                        android:gravity="center_vertical"
+                        android:text="@string/authentication_register_main_bxxk_fzrsfz_zm"
+                        android:id="@+id/persion_front_textview"
+                        android:textColor="@color/theme_first_text_color"
+                        android:layout_width="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_height="wrap_content"/>
+
+
+                    <TextView
+                        android:textSize="@dimen/size_14"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/authentication_register_main_bxxk_cksl"
+                        android:visibility="gone"
+                        android:onClick="showSFZZMction"
+                        android:textColor="@color/theme_main_background_color"
+                        android:layout_width="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:id="@+id/sfz_front"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:onClick="takenZMAction"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/take_phone_zm_imageview"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:src="@drawable/svg_camera"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"/>
+
+                    <ImageView
+                        android:id="@+id/zm_imageview"
+                        android:visibility="gone"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:background="@color/default_line_color"
+                android:layout_height="1dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/list_view_item_margin_left"
+            android:layout_marginRight="@dimen/list_view_item_margin_right"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:weightSum="3"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:textSize="@dimen/size_14"
+                        android:gravity="center_vertical"
+                        android:text="@string/authentication_register_main_bxxk_fzrsfz_fm"
+                        android:id="@+id/persion_back_textview"
+                        android:textColor="@color/theme_first_text_color"
+                        android:layout_width="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_height="wrap_content"/>
+
+
+                    <TextView
+                        android:textSize="@dimen/size_14"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/authentication_register_main_bxxk_cksl"
+                        android:visibility="gone"
+                        android:onClick="showSFZFMction"
+                        android:textColor="@color/theme_main_background_color"
+                        android:layout_width="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:id="@+id/sfz_back"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:onClick="takenFMAction"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/take_phone_fm_imageview"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:src="@drawable/svg_camera"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"/>
+
+                    <ImageView
+                        android:id="@+id/fm_imageview"
+                        android:visibility="gone"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:background="@color/default_line_color"
+                android:layout_height="1dp"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:onClick="showProviceAction"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/list_view_item_margin_left"
+            android:layout_marginRight="@dimen/list_view_item_margin_right"
+            android:layout_height="70dp">
+
+            <TextView
+                android:textSize="@dimen/size_14"
+                android:gravity="center_vertical"
+                android:text="@string/authentication_register_main_bxxk_szcs"
+                android:textColor="@color/theme_first_text_color"
+                android:layout_width="wrap_content"
+                android:id="@+id/adcode_textview"
+                android:layout_alignParentLeft="true"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:text="@string/authentication_register_main_bxxk_szcs_hint"
+                android:layout_toRightOf="@+id/adcode_textview"
+                android:layout_marginLeft="15dp"
+                android:gravity="center_vertical|right"
+                android:layout_toLeftOf="@+id/next_view"
+                android:background="@null"
+                android:textCursorDrawable="@null"
+                android:id="@+id/address_edittext"
+                android:textSize="@dimen/size_14"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"/>
+            <ImageView
+                android:id="@+id/next_view"
+                android:layout_marginTop="27dp"
+                android:layout_marginLeft="5dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/svg_detail"
+                android:layout_width="6dp"
+                android:layout_height="12dp"/>
+
+            <View
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:background="@color/default_line_color"
+                android:layout_height="1dp"/>
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_marginTop="60dip"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="40dp"
+            android:onClick="nextAction"
+            android:text="@string/forget_password_textview_next"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_16"
+            android:gravity="center"
+            android:background="@drawable/textview_selector"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

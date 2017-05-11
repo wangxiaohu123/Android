@@ -1,0 +1,178 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="@android:windowAnimationStyle">@style/ActivityInOrOutAnimation</item>
+        <!--<item name="@android:datePickerDialogTheme">@style/MyDatePickerDialogTheme</item>-->
+        <!--<item name="@android:timePickerDialogTheme">@style/MyDatePickerDialogTheme</item>-->
+        <item name="actionSheetStyle">@style/ActionSheetStyleiOS7</item>
+    </style>
+
+
+    <style name="dialogstyle">
+        <!--设置dialog的背景-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--设置Dialog的windowFrame框为无-->
+        <item name="android:windowFrame">@null</item>
+        <!--设置无标题-->
+        <item name="android:windowNoTitle">true</item>
+        <!--是否浮现在activity之上-->
+        <item name="android:windowIsFloating">true</item>
+        <!--是否半透明-->
+        <item name="android:windowIsTranslucent">true</item>
+        <!--设置窗口内容不覆盖-->
+        <item name="android:windowContentOverlay">@null</item>
+        <!--设置动画，在这里使用让它继承系统的Animation.Dialog-->
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <!--背景是否模糊显示-->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <!--<style name="MyDatePickerDialogTheme" parent="android:Theme.Material.Light.Dialog">-->
+        <!--<item name="@android:colorAccent">@color/theme_main_background_color</item>-->
+    <!--</style>-->
+
+    <!-- iOS7 Style -->
+    <!--<style name="ActionSheetStyleiOS7">-->
+        <!--<item name="actionSheetBackground">@android:color/transparent</item>-->
+        <!--<item name="cancelButtonBackground">@drawable/slt_as_ios7_cancel_bt</item>-->
+        <!--<item name="otherButtonTopBackground">@drawable/slt_as_ios7_other_bt_top</item>-->
+        <!--<item name="otherButtonMiddleBackground">@drawable/slt_as_ios7_other_bt_middle</item>-->
+        <!--<item name="otherButtonBottomBackground">@drawable/slt_as_ios7_other_bt_bottom</item>-->
+        <!--<item name="otherButtonSingleBackground">@drawable/slt_as_ios7_other_bt_single</item>-->
+        <!--<item name="cancelButtonTextColor">#1E82FF</item>-->
+        <!--<item name="otherButtonTextColor">#1E82FF</item>-->
+        <!--<item name="actionSheetPadding">10dp</item>-->
+        <!--<item name="otherButtonSpacing">0dp</item>-->
+        <!--<item name="cancelButtonMarginTop">10dp</item>-->
+        <!--<item name="actionSheetTextSize">12sp</item>-->
+    <!--</style>-->
+
+    <style name="AppSplash" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+
+    <!-- activity 过渡动画 -->
+    <style name="ActivityInOrOutAnimation">
+        <item name="@android:activityOpenEnterAnimation">@anim/push_left_in</item>
+        <item name="@android:activityOpenExitAnimation">@anim/push_left_out</item>
+        <item name="@android:activityCloseEnterAnimation">@anim/push_right_in</item>
+        <item name="@android:activityCloseExitAnimation">@anim/push_right_out</item>
+    </style>
+
+    <!--不带动画的对话框style-->
+    <style name="style_dialog_without_anim" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <!--列表项普通文字样式-->
+    <style name="ItemTextViewStyle">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/font_3</item>
+        <item name="android:padding">6dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!--竖向分割线-->
+    <style name="columnDivider">
+        <item name="android:layout_width">0.5dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/gray_line</item>
+    </style>
+
+    <!--横向分割线-->
+    <style name="rowDivider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">@color/gray_line</item>
+    </style>
+
+    <!--蓝底白字按钮背景-->
+    <style name="FunctionButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <!--<item name="android:background">@drawable/button_shape</item>-->
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="MyCheckBox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/checkbox_selector</item>
+
+    </style>
+
+    <!-- 文字样式 -->
+
+    <style name="NavigationMenuTextStyle">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/default_second_text_color</item>
+        <item name="android:textSize">10dip</item>
+    </style>
+
+    <style name="NavigationTextStyle">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">33dip</item>
+    </style>
+
+
+    <style name="CellMenuTextStyle">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/theme_first_text_color</item>
+        <item name="android:textSize">12dip</item>
+    </style>
+
+
+    <style name="TitleTextStyle">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">15dip</item>
+    </style>
+
+
+    <style name="standardTextStyle">
+        <item name="android:textColor">@color/default_second_text_color</item>
+        <item name="android:textSize">13dip</item>
+    </style>
+
+    <style name="MinorityTextStyle">
+        <item name="android:textColor">@color/default_second_text_color</item>
+        <item name="android:textSize">12dip</item>
+    </style>
+
+    <style name="MostTextStyle">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">16dip</item>
+    </style>
+
+
+    <style name="ListViewItemTitleTextStyle">
+        <item name="android:textColor">@color/theme_first_text_color</item>
+        <item name="android:textSize">16dip</item>
+    </style>
+
+    <style name="ListViewItemSecondTextStyle">
+        <item name="android:textColor">@color/default_second_text_color</item>
+        <item name="android:textSize">13dip</item>
+    </style>
+
+    <style name="ListViewItemThirdextStyle">
+        <item name="android:textColor">@color/default_second_text_color</item>
+        <item name="android:textSize">12dip</item>
+    </style>
+
+    <style name="ViewItemSecondTextStyle">
+        <item name="android:textColor">@color/default_first_text_color</item>
+        <item name="android:textSize">14dip</item>
+    </style>
+
+</resources>

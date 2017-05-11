@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_curriculum_info_des"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ykx.organization.pages.home.operates.curriculum.CurriculumInfoDesActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/default_line_color"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/bk_des_content"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:padding="10dp"
+        android:enabled="true"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:minLines="8"
+        android:maxLines="50"
+        android:scrollbars="vertical"
+        android:textCursorDrawable="@null"
+        android:textColor="@color/default_second_text_color"
+        android:textSize="@dimen/size_14"
+        android:hint="@string/curriculum_activity_add_info_des_content_bkjj"
+        android:background="@color/white">
+    </EditText>
+
+</LinearLayout>
+</LinearLayout>

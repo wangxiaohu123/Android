@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--字体大小-->
+    <!--topBar字体大小-->
+    <dimen name="bar_text">19sp</dimen>
+    <!--蓝色button字体大小-->
+    <dimen name="button_text">18sp</dimen>
+    <!--小标题字体大小-->
+    <dimen name="bold_text">17sp</dimen>
+    <!--一般字体大小-->
+    <dimen name="normal_text">16sp</dimen>
+    <dimen name="hint_text">16sp</dimen>
+    <!--单选框和复选框字体大小-->
+    <dimen name="radio_button_text">14sp</dimen>
+
+    <!--首页各选项图片的长宽及与边缘的距离-->
+    <dimen name="first_page_module_width_height">110dp</dimen>
+    <dimen name="first_page_module_picture_width_height">65dp</dimen>
+    <dimen name="first_page_module_picture_margin_start_end">25dp</dimen>
+
+    <!--首页选项图片布局与主界面的边缘距离-->
+    <dimen name="first_page_module_margin_parent">35dp</dimen>
+    <!--各字段间距-->
+    <dimen name="text_to_text_margin">7dp</dimen>
+    <!--输入框距离右边距-->
+    <dimen name="edit_text_margin_right">15dp</dimen>
+
+    <!--radioGroup的高度-->
+    <dimen name="radio_group_height">45dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+
+
+    <dimen name="size_right_text">15dp</dimen>
+    <!-- font size -->
+    <dimen name="size_8">8dp</dimen>
+    <dimen name="size_9">9dp</dimen>
+    <dimen name="size_10">10dp</dimen>
+    <dimen name="size_12">12dp</dimen>
+    <dimen name="size_13">13dp</dimen>
+    <dimen name="size_14">14dp</dimen>
+    <dimen name="size_15">15dp</dimen>
+    <dimen name="size_16">16dp</dimen>
+    <dimen name="size_18">18dp</dimen>
+    <dimen name="size_20">20dp</dimen>
+    <dimen name="size_23">23dp</dimen>
+    <dimen name="size_25">25dp</dimen>
+
+</resources>

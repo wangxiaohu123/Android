@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_campus_time"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/list_view_item_margin_top"
+        android:paddingLeft="@dimen/list_view_item_margin_left"
+        android:paddingRight="@dimen/list_view_item_margin_right"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="08:00-12:00"
+            android:textColor="@color/theme_first_text_color"
+            android:id="@+id/time_textview"
+            android:textSize="@dimen/size_15"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+        <View
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_width="1dp"
+            android:background="@color/default_line_color"
+            android:layout_height="match_parent"/>
+
+        <LinearLayout
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="每周一"
+                android:paddingTop="12.5dp"
+                android:id="@+id/type_textview"
+                android:textColor="@color/default_second_text_color"
+                android:textSize="@dimen/size_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="2017-03-30 至 2017-04-31"
+                android:paddingBottom="12.5dp"
+                android:id="@+id/date_textview"
+                android:textColor="@color/default_second_text_color"
+                android:textSize="@dimen/size_12"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

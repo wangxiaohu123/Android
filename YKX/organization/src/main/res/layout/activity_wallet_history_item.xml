@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="67dp">
+        <LinearLayout
+            android:layout_marginLeft="@dimen/list_view_item_margin_left"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/xf_title_view"
+                android:text="充值"
+                android:textSize="@dimen/size_14"
+                android:textColor="@color/theme_first_text_color"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/xf_time_view"
+                android:text="2017-09-21"
+                android:textSize="@dimen/size_12"
+                android:textColor="@color/default_second_text_color"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/xf_num_view"
+            android:layout_marginRight="@dimen/list_view_item_margin_right"
+            android:layout_alignParentRight="true"
+            android:text="+25个"
+            android:textColor="@color/theme_main_background_color"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+        <View
+            android:background="@color/default_line_color"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+    </RelativeLayout>
+</LinearLayout>
+

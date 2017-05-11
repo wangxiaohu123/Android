@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:background="@color/default_line_color"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/list_view_item_margin_top"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:paddingTop="@dimen/list_view_item_margin_top"
+            android:paddingLeft="@dimen/list_view_item_margin_left"
+            android:paddingRight="@dimen/list_view_item_margin_right"
+            android:layout_height="40dp">
+
+            <ImageView
+                android:id="@+id/school_view"
+                android:src="@drawable/svg_home_curriculum_school_small"
+                android:layout_marginTop="3.5dp"
+                android:layout_width="18dp"
+                android:layout_height="18dp"/>
+
+            <TextView
+                android:id="@+id/xq_name_textview"
+                android:text="校区名称 A"
+                android:layout_marginLeft="6dp"
+                android:textSize="@dimen/size_16"
+                android:textColor="@color/theme_first_text_color"
+                android:lines="1"
+                android:gravity="center_vertical"
+                android:layout_toRightOf="@+id/school_view"
+                android:layout_toLeftOf="@+id/more_view"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+
+
+            <ImageView
+                android:id="@+id/more_view"
+                android:src="@drawable/svg_home_curriculum_more_small"
+                android:layout_alignParentRight="true"
+                android:paddingLeft="@dimen/list_view_item_margin_left"
+                android:layout_marginTop="-2dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/xq_address_textview"
+            android:text="四川省成都市高新区"
+            android:layout_marginLeft="41dp"
+            android:layout_marginRight="15dp"
+            android:textSize="@dimen/size_14"
+            android:textColor="@color/default_second_text_color"
+            android:gravity="top"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="3dp"
+            android:layout_toRightOf="@+id/school_view"
+            android:layout_toLeftOf="@+id/more_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <View
+            android:background="@color/default_line_color"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+
+        <GridView
+            android:id="@+id/curriculum_type_campus_view"
+            android:numColumns="2"
+            android:layout_marginLeft="41dp"
+            android:layout_marginRight="41dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="@dimen/list_view_item_margin_right"
+            android:layout_marginLeft="@dimen/list_view_item_margin_left"
+            android:layout_marginBottom="@dimen/list_view_item_margin_buttom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/xq_curriculum_manager_textview"
+                android:layout_alignParentRight="true"
+                android:text="@string/campus_activity_list_manager"
+                android:textColor="@color/theme_main_background_color"
+                android:textSize="@dimen/size_14"
+                android:gravity="center"
+                android:background="@drawable/textview_null_selector"
+                android:layout_width="90dp"
+                android:layout_height="30dp"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+    <!--<View-->
+        <!--android:id="@+id/buttom_line_view"-->
+        <!--android:visibility="gone"-->
+        <!--android:background="@color/default_line_color"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="15dp"/>-->
+
+
+</LinearLayout>

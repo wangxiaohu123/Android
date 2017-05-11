@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:background="@color/default_line_color"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_alignParentLeft="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/list_view_item_margin_left"
+                android:paddingRight="@dimen/list_view_item_margin_right"
+                android:layout_height="30dp">
+
+                <ImageView
+                    android:id="@+id/school_view"
+                    android:background="@drawable/corner_imageview_school"
+                    android:src="@drawable/svg_home_curriculum_school_small"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"/>
+
+                <TextView
+                    android:id="@+id/xq_name_textview"
+                    android:text="校区名称 A"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="@dimen/size_14"
+                    android:textColor="@color/theme_first_text_color"
+                    android:lines="1"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/xq_address_textview"
+                android:text="四川省成都市高新区"
+                android:layout_marginLeft="41dp"
+                android:layout_marginRight="@dimen/list_view_item_margin_right"
+                android:layout_marginBottom="10dp"
+                android:textSize="13dp"
+                android:textColor="@color/default_second_text_color"
+                android:gravity="center_vertical"
+                android:layout_toRightOf="@+id/school_view"
+                android:layout_toLeftOf="@+id/more_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+        <ImageView
+            android:layout_marginTop="22dp"
+            android:paddingRight="@dimen/list_view_item_margin_right"
+            android:id="@+id/selected_view"
+            android:src="@drawable/svg_image_check"
+            android:layout_alignParentRight="true"
+            android:layout_width="18dp"
+            android:layout_height="18dp"/>
+    </RelativeLayout>
+    <View
+        android:layout_marginLeft="@dimen/list_view_item_margin_left"
+        android:layout_marginRight="@dimen/list_view_item_margin_right"
+        android:background="@color/default_line_color"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+
+</LinearLayout>

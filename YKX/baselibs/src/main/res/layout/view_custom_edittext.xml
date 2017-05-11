@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+    <RelativeLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dip">
+
+
+        <ImageView
+            android:layout_marginTop="17dp"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:visibility="gone"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/custom_edittext_left_imageView"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textPersonName"
+            android:textCursorDrawable="@null"
+            android:hint="请输入内容"
+            android:textColorHint="@color/default_unselected_color"
+            android:textSize="@dimen/size_14"
+            android:layout_toRightOf="@+id/custom_edittext_left_imageView"
+            android:layout_toLeftOf="@+id/custom_edittext_right_imageView"
+            android:background="@null"
+            android:textColor="@color/black"
+            android:id="@+id/custom_edittext_editText"/>
+
+        <ImageView
+            android:layout_marginTop="15dip"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:visibility="gone"
+            android:src="@drawable/svg_clear"
+            android:layout_marginRight="0dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/custom_edittext_right_imageView"/>
+
+    </RelativeLayout>
+    <View
+        android:id="@+id/custom_edittext_line"
+        android:background="@color/default_line_color"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+</LinearLayout>

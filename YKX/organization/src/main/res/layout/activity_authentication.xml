@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_authentication"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ykx.organization.pages.authentication.AuthenticationActivity">
+
+    <RelativeLayout
+        android:id="@+id/item1_group_view"
+        android:onClick="clickItemSYAction"
+        android:layout_margin="20dp"
+        android:background="@drawable/corner_group_view"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="85dp">
+
+        <ImageView
+            android:id="@+id/item1_image"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/svg_organization"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+
+        <TextView
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_15"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:layout_toRightOf="@+id/item1_image"
+            android:layout_toLeftOf="@+id/item2_image"
+            android:text="@string/authentication_home_item1_yzzz"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <ImageView
+            android:id="@+id/item2_image"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/svg_detail_smail_write"
+            android:layout_width="6dp"
+            android:layout_height="12dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/item2_group_view"
+        android:onClick="clickItemXXAction"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/corner_group_view"
+        android:layout_width="match_parent"
+        android:layout_height="85dp">
+
+        <ImageView
+            android:id="@+id/item11_image"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/svg_school"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+
+        <TextView
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_15"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:layout_toRightOf="@+id/item11_image"
+            android:layout_toLeftOf="@+id/item12_image"
+            android:text="@string/authentication_home_item2_bxxkz"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <ImageView
+            android:id="@+id/item12_image"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/svg_detail_smail_write"
+            android:layout_width="6dp"
+            android:layout_height="12dp"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_marginTop="35dp"
+        android:text="@string/authentication_home_text_des"
+        android:textColor="@color/default_second_text_color"
+        android:textSize="@dimen/size_14"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:src="@drawable/svg_bktg"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"/>
+                 <TextView
+                     android:textSize="@dimen/size_10"
+                     android:layout_marginTop="5dp"
+                     android:textColor="@color/default_second_text_color"
+                     android:gravity="center"
+                     android:text="@string/authentication_home_text_item1_title"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:src="@drawable/svg_pptg"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"/>
+                <TextView
+                    android:textSize="@dimen/size_10"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/default_second_text_color"
+                    android:gravity="center"
+                    android:text="@string/authentication_home_text_item2_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:src="@drawable/svg_mstg"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"/>
+                <TextView
+                    android:textSize="@dimen/size_10"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/default_second_text_color"
+                    android:gravity="center"
+                    android:text="@string/authentication_home_text_item3_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:src="@drawable/svg_yygl"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"/>
+                <TextView
+                    android:textSize="@dimen/size_10"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/default_second_text_color"
+                    android:gravity="center"
+                    android:text="@string/authentication_home_text_item4_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:src="@drawable/svg_yyzc"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"/>
+                <TextView
+                    android:textSize="@dimen/size_10"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/default_second_text_color"
+                    android:gravity="center"
+                    android:text="@string/authentication_home_text_item5_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:src="@drawable/svg_tjfx"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"/>
+                <TextView
+                    android:textSize="@dimen/size_10"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/default_second_text_color"
+                    android:gravity="center"
+                    android:text="@string/authentication_home_text_item6_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="65dp"
+        android:text="@string/authentication_home_text_wait_des"
+        android:textColor="@color/theme_main_background_color"
+        android:textSize="@dimen/size_14"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

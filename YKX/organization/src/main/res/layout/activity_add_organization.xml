@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_organization"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ykx.organization.pages.home.operates.organization.AddOrganizationActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@color/default_line_color"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+
+
+        <LinearLayout
+            android:gravity="center"
+            android:background="@drawable/corner_view_yj_bg"
+            android:layout_width="18dp"
+            android:layout_height="18dp">
+            <TextView
+                android:text="1"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_10"
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+        </LinearLayout>
+        <TextView
+            android:text="@string/organization_activity_nav_xjjg_text"
+            android:textColor="@color/default_second_text_color"
+            android:layout_marginLeft="2dp"
+            android:gravity="center"
+            android:textSize="@dimen/size_12"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+        <ImageView
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/svg_detail"
+            android:layout_width="6dp"
+            android:layout_height="12dp"/>
+
+        <LinearLayout
+            android:gravity="center"
+            android:background="@drawable/corner_view_yj_unselected_bg"
+            android:layout_width="18dp"
+            android:layout_height="18dp">
+            <TextView
+                android:text="2"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_10"
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+        </LinearLayout>
+        <TextView
+            android:text="@string/organization_activity_nav_xjxq_text"
+            android:layout_marginLeft="2dp"
+            android:textColor="@color/default_unselected_color"
+            android:gravity="center"
+            android:textSize="@dimen/size_12"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/list_view_item_margin_left"
+        android:layout_marginRight="@dimen/list_view_item_margin_right"
+        android:layout_height="70dp">
+
+        <TextView
+            android:textSize="@dimen/size_14"
+            android:gravity="center_vertical"
+            android:text="@string/organization_activity_jg_jc"
+            android:textColor="@color/theme_first_text_color"
+            android:layout_width="wrap_content"
+            android:id="@+id/name_textview"
+            android:layout_alignParentLeft="true"
+            android:layout_height="match_parent"/>
+
+        <View
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:background="@color/default_line_color"
+            android:layout_height="1dp"/>
+
+        <EditText
+            android:hint="@string/organization_activity_jg_jc_hint"
+            android:gravity="center_vertical|right"
+            android:id="@+id/input_name_edittext"
+            android:background="@null"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/size_14"
+            android:textColor="@color/default_second_text_color"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/list_view_item_margin_left"
+        android:layout_marginRight="@dimen/list_view_item_margin_right"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:weightSum="3"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="@dimen/size_14"
+                android:gravity="center_vertical"
+                android:text="@string/organization_activity_jg_logo"
+                android:textColor="@color/theme_first_text_color"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_alignParentLeft="true"
+                android:layout_height="wrap_content"/>
+
+            <RelativeLayout
+                android:onClick="takenLogoAction"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/take_phone_logo_imageview"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/svg_camera"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"/>
+
+                <ImageView
+                    android:id="@+id/logo_imageview"
+                    android:visibility="gone"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/default_line_color"
+            android:layout_height="1dp"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:onClick="showOrganizationTypeAction"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/list_view_item_margin_left"
+        android:layout_marginRight="@dimen/list_view_item_margin_right"
+        android:layout_height="70dp">
+
+        <TextView
+            android:textSize="@dimen/size_14"
+            android:gravity="center_vertical"
+            android:text="@string/organization_activity_jg_lm"
+            android:textColor="@color/theme_first_text_color"
+            android:layout_width="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:text="@string/organization_activity_jg_lm_hint"
+            android:gravity="center_vertical|right"
+            android:layout_toLeftOf="@+id/organization_detail_view"
+            android:id="@+id/organization_type_view"
+            android:textSize="@dimen/size_14"
+            android:textColor="@color/default_second_text_color"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"/>
+
+        <ImageView
+            android:id="@+id/organization_detail_view"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="26dp"
+            android:src="@drawable/svg_detail"
+            android:layout_alignParentRight="true"
+            android:layout_width="6dp"
+            android:layout_height="12dp"/>
+
+        <View
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:background="@color/default_line_color"
+            android:layout_height="1dp"/>
+    </RelativeLayout>
+
+    <com.ykx.baselibs.views.SubmitStateView
+        android:layout_marginTop="60dip"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="40dp"
+        android:onClick="commintAction"
+        android:id="@+id/organizaiton_view"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+
+</LinearLayout>

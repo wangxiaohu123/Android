@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_brand_model_email"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.ykx.organization.pages.home.operates.brandmanager.BrandModelEmailActivity">
+
+    <TextView
+        android:gravity="center"
+        android:textColor="@color/theme_first_text_color"
+        android:layout_marginTop="130dp"
+        android:textSize="@dimen/size_16"
+        android:text="@string/brandmanager_activity_modle_email_notices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <com.ykx.baselibs.views.CustomEditText
+        android:id="@+id/email_view"
+        android:layout_margin="40dp"
+        android:layout_marginTop="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.ykx.baselibs.views.CustomEditText>
+
+
+    <com.ykx.baselibs.views.SubmitStateView
+        android:id="@+id/send_email_view"
+        android:layout_margin="40dp"
+        android:layout_marginTop="70dip"
+        android:onClick="sendEmailAction"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+
+</LinearLayout>

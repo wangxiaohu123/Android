@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_brand_info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ykx.organization.pages.home.operates.brandmanager.BrandInfoActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:textSize="@dimen/size_14"
+            android:textColor="@color/default_second_text_color"
+            android:background="@color/default_line_color"
+            android:layout_height="20dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/list_view_item_margin_left"
+            android:layout_marginRight="@dimen/list_view_item_margin_right"
+            android:layout_height="70dp">
+
+            <TextView
+                android:textSize="@dimen/size_14"
+                android:gravity="center_vertical"
+                android:text="@string/brandmanager_activity_base_info_item_ppmc"
+                android:textColor="@color/theme_first_text_color"
+                android:layout_width="wrap_content"
+                android:id="@+id/name_textview"
+                android:layout_alignParentLeft="true"
+                android:layout_height="match_parent"/>
+
+            <EditText
+                android:hint="@string/brandmanager_activity_base_info_item_ppmc_hint"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical|right"
+                android:id="@+id/input_name_edittext"
+                android:background="@null"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/size_14"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"/>
+
+            <View
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:background="@color/default_line_color"
+                android:layout_height="1dp"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/list_view_item_margin_left"
+            android:layout_marginRight="@dimen/list_view_item_margin_right"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:weightSum="3"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textSize="@dimen/size_14"
+                        android:gravity="center_vertical"
+                        android:text="@string/brandmanager_activity_base_info_item_pglogo"
+                        android:id="@+id/xkz_textview"
+                        android:textColor="@color/theme_first_text_color"
+                        android:layout_width="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_height="wrap_content"/>
+
+
+                    <TextView
+                        android:textSize="@dimen/size_14"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/authentication_register_main_bxxk_cksl"
+                        android:textColor="@color/theme_main_background_color"
+                        android:layout_width="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:onClick="takenBZXKZAction"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/showpicimageview"
+                        android:src="@drawable/svg_camera"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"/>
+
+                    <ImageView
+                        android:id="@+id/xkz_imageview"
+                        android:visibility="gone"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/default_line_color"
+                android:layout_height="1dp"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/item_view1"
+            android:onClick="selectPicAndMessageAction"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/list_view_item_margin_left"
+            android:layout_marginRight="@dimen/list_view_item_margin_right"
+            android:layout_height="70dp">
+
+            <TextView
+                android:textSize="@dimen/size_14"
+                android:gravity="center_vertical"
+                android:text="@string/brandmanager_activity_base_info_item_jxtx"
+                android:textColor="@color/theme_first_text_color"
+                android:layout_width="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_height="match_parent"/>
+
+            <ImageView
+                android:layout_marginTop="27dp"
+                android:layout_marginLeft="5dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/svg_detail"
+                android:layout_width="6dp"
+                android:layout_height="12dp"/>
+
+            <View
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:background="@color/default_line_color"
+                android:layout_height="1dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/item_view2"
+            android:onClick="selectPicAndMessageAction"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/list_view_item_margin_left"
+            android:layout_marginRight="@dimen/list_view_item_margin_right"
+            android:layout_height="70dp">
+
+            <TextView
+                android:textSize="@dimen/size_14"
+                android:gravity="center_vertical"
+                android:text="@string/brandmanager_activity_base_info_item_jxtd"
+                android:textColor="@color/theme_first_text_color"
+                android:layout_width="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_height="match_parent"/>
+
+            <ImageView
+                android:layout_marginTop="27dp"
+                android:layout_marginLeft="5dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/svg_detail"
+                android:layout_width="6dp"
+                android:layout_height="12dp"/>
+
+            <View
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:background="@color/default_line_color"
+                android:layout_height="1dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/item_view3"
+            android:onClick="selectPicAndMessageAction"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/list_view_item_margin_left"
+            android:layout_marginRight="@dimen/list_view_item_margin_right"
+            android:layout_height="70dp">
+
+            <TextView
+                android:textSize="@dimen/size_14"
+                android:gravity="center_vertical"
+                android:text="@string/brandmanager_activity_base_info_item_ppry"
+                android:textColor="@color/theme_first_text_color"
+                android:layout_width="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_height="match_parent"/>
+
+            <ImageView
+                android:layout_marginTop="27dp"
+                android:layout_marginLeft="5dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/svg_detail"
+                android:layout_width="6dp"
+                android:layout_height="12dp"/>
+
+            <View
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:background="@color/default_line_color"
+                android:layout_height="1dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/item_view4"
+            android:onClick="selectPicAndMessageAction"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/list_view_item_margin_left"
+            android:layout_marginRight="@dimen/list_view_item_margin_right"
+            android:layout_height="70dp">
+
+            <TextView
+                android:textSize="@dimen/size_14"
+                android:gravity="center_vertical"
+                android:text="@string/brandmanager_activity_base_info_item_xqhj"
+                android:textColor="@color/theme_first_text_color"
+                android:layout_width="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_height="match_parent"/>
+
+            <ImageView
+                android:layout_marginTop="27dp"
+                android:layout_marginLeft="5dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/svg_detail"
+                android:layout_width="6dp"
+                android:layout_height="12dp"/>
+
+            <View
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:background="@color/default_line_color"
+                android:layout_height="1dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/item_view5"
+            android:onClick="selectPicAndMessageAction"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/list_view_item_margin_left"
+            android:layout_marginRight="@dimen/list_view_item_margin_right"
+            android:layout_height="70dp">
+
+            <TextView
+                android:textSize="@dimen/size_14"
+                android:gravity="center_vertical"
+                android:text="@string/brandmanager_activity_base_info_item_yytd"
+                android:textColor="@color/theme_first_text_color"
+                android:layout_width="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_height="match_parent"/>
+
+            <ImageView
+                android:layout_marginTop="27dp"
+                android:layout_marginLeft="5dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/svg_detail"
+                android:layout_width="6dp"
+                android:layout_height="12dp"/>
+
+            <View
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:background="@color/default_line_color"
+                android:layout_height="1dp"/>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</ScrollView>

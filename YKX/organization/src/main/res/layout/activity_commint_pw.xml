@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_commint_pw"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ykx.organization.pages.usercenter.setting.CommintPWActivity">
+
+    <TextView
+        android:gravity="center_vertical"
+        android:background="@color/default_line_color"
+        android:paddingLeft="20dp"
+        android:textSize="@dimen/size_14"
+        android:textColor="@color/default_second_text_color"
+        android:text="@string/persion_center_info_jg_setting_change_yz_notices"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+
+    <com.ykx.baselibs.views.CustomEditText
+        android:layout_marginTop="30dip"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/change_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.ykx.baselibs.views.CustomEditText>
+
+
+    <com.ykx.baselibs.views.SubmitStateView
+        android:layout_marginTop="60dip"
+        android:onClick="changePWAction"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:id="@+id/submit_view"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+
+</LinearLayout>

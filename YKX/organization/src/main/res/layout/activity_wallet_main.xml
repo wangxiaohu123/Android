@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_common_problem"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/default_line_color"
+    tools:context="com.ykx.organization.pages.home.operates.wallet.CommonProblemActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/list_view_item_margin_top"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/list_view_item_margin_left"
+            android:layout_marginRight="@dimen/list_view_item_margin_right"
+            android:layout_height="67dp">
+
+            <ImageView
+                android:background="@mipmap/wallet_ye"
+                android:id="@+id/pic1_view"
+                android:layout_width="24dp"
+                android:layout_height="24dp"/>
+            <TextView
+                android:layout_toRightOf="@+id/pic1_view"
+                android:textColor="@color/theme_first_text_color"
+                android:textSize="@dimen/size_14"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="2dp"
+                android:text="@string/activity_operate_wallet_main_ye"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:layout_toLeftOf="@+id/pic1_next_view"
+                android:textColor="@color/default_second_text_color"
+                android:textSize="@dimen/size_14"
+                android:layout_marginRight="13dp"
+                android:layout_marginTop="2dp"
+                android:text="0元"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:background="@drawable/svg_detail"
+                android:id="@+id/pic1_next_view"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5.5dp"
+                android:layout_width="6dp"
+                android:layout_height="12dp"/>
+
+        </RelativeLayout>
+
+        <View
+            android:background="@color/default_line_color"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/list_view_item_margin_left"
+            android:layout_marginRight="@dimen/list_view_item_margin_right"
+            android:layout_height="1dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:onClick="toUBDetailAction"
+            android:layout_marginLeft="@dimen/list_view_item_margin_left"
+            android:layout_marginRight="@dimen/list_view_item_margin_right"
+            android:layout_height="67dp">
+
+            <ImageView
+                android:background="@mipmap/wallet_ub"
+                android:id="@+id/pic2_view"
+                android:layout_width="24dp"
+                android:layout_height="24dp"/>
+            <TextView
+                android:layout_toRightOf="@+id/pic2_view"
+                android:textColor="@color/theme_first_text_color"
+                android:textSize="@dimen/size_14"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="2dp"
+                android:text="@string/activity_operate_wallet_main_ub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:layout_toLeftOf="@+id/pic2_next_view"
+                android:textColor="@color/default_second_text_color"
+                android:textSize="@dimen/size_14"
+                android:layout_marginRight="13dp"
+                android:layout_marginTop="2dp"
+                android:text="0个"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:background="@drawable/svg_detail"
+                android:id="@+id/pic2_next_view"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5.5dp"
+                android:layout_width="6dp"
+                android:layout_height="12dp"/>
+
+        </RelativeLayout>
+
+        <View
+            android:background="@color/default_line_color"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/list_view_item_margin_left"
+            android:layout_marginRight="@dimen/list_view_item_margin_right"
+            android:layout_height="1dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/list_view_item_margin_left"
+            android:layout_marginRight="@dimen/list_view_item_margin_right"
+            android:layout_height="67dp">
+
+            <ImageView
+                android:background="@mipmap/wallet_yhq"
+                android:id="@+id/pic3_view"
+                android:layout_width="24dp"
+                android:layout_height="24dp"/>
+            <TextView
+                android:layout_toRightOf="@+id/pic3_view"
+                android:textColor="@color/theme_first_text_color"
+                android:textSize="@dimen/size_14"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="2dp"
+                android:text="@string/activity_operate_wallet_main_yhq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:layout_toLeftOf="@+id/pic3_next_view"
+                android:textColor="@color/default_second_text_color"
+                android:textSize="@dimen/size_14"
+                android:layout_marginRight="13dp"
+                android:layout_marginTop="2dp"
+                android:text="4张"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:background="@drawable/svg_detail"
+                android:id="@+id/pic3_next_view"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5.5dp"
+                android:layout_width="6dp"
+                android:layout_height="12dp"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/list_view_item_margin_top"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/list_view_item_margin_left"
+            android:layout_marginRight="@dimen/list_view_item_margin_right"
+            android:layout_height="67dp">
+
+            <ImageView
+                android:background="@mipmap/wallet_txzh"
+                android:id="@+id/pic11_view"
+                android:layout_width="24dp"
+                android:layout_height="24dp"/>
+            <TextView
+                android:layout_toRightOf="@+id/pic11_view"
+                android:textColor="@color/theme_first_text_color"
+                android:textSize="@dimen/size_14"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="2dp"
+                android:text="@string/activity_operate_wallet_main_txzh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:layout_toLeftOf="@+id/pic11_next_view"
+                android:textColor="@color/default_second_text_color"
+                android:textSize="@dimen/size_14"
+                android:layout_marginRight="13dp"
+                android:layout_marginTop="2dp"
+                android:text="3个"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:background="@drawable/svg_detail"
+                android:id="@+id/pic11_next_view"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5.5dp"
+                android:layout_width="6dp"
+                android:layout_height="12dp"/>
+
+        </RelativeLayout>
+
+        <View
+            android:background="@color/default_line_color"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/list_view_item_margin_left"
+            android:layout_marginRight="@dimen/list_view_item_margin_right"
+            android:layout_height="1dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/list_view_item_margin_left"
+            android:layout_marginRight="@dimen/list_view_item_margin_right"
+            android:layout_height="67dp">
+
+            <ImageView
+                android:background="@mipmap/wallet_fp"
+                android:id="@+id/pic12_view"
+                android:layout_width="24dp"
+                android:layout_height="24dp"/>
+            <TextView
+                android:layout_toRightOf="@+id/pic12_view"
+                android:textColor="@color/theme_first_text_color"
+                android:textSize="@dimen/size_14"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="2dp"
+                android:text="@string/activity_operate_wallet_main_fb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:layout_toLeftOf="@+id/pic12_next_view"
+                android:textColor="@color/default_second_text_color"
+                android:textSize="@dimen/size_14"
+                android:layout_marginRight="13dp"
+                android:layout_marginTop="2dp"
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:background="@drawable/svg_detail"
+                android:id="@+id/pic12_next_view"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5.5dp"
+                android:layout_width="6dp"
+                android:layout_height="12dp"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,47 @@
+variables:
+  ANDROID_HOME: /usr/local/share/android-sdk
+stages:
+- test
+- build_dev
+- build_release
+- cleanup
+
+cache:
+  paths:
+    - .gradle/wrapper
+    - .gradle/caches
+
+test_job:
+  stage: test
+  #这个是每次提交或者合并代码都会执行测试和ui测试
+  script: 
+      - cd ./YKX && ./gradlew test
+
+cleanup_build_job:
+  stage: cleanup
+  script: 
+      - cd ./YKX && ./gradlew clean
+  #只在构建失败的时候执行clean
+  when: on_failure
+
+build_release_job:
+  stage: build_release
+  script: "sh ./build_release_package.sh"
+  #需要手动触发
+  when: manual
+  #只会在master分支上执行
+  only:
+    - master
+  #打包好的物料的地址 会自动上传到gitlab
+  artifacts:
+    paths:
+    - YKX/organization/build/outputs/apk/*release*
+
+build_debug_job:
+  stage: build_dev
+  script: 
+    - "sh ./build_develop_package.sh"
+    - fir  publish   YKX/organization/build/outputs/apk/*debug*
+  only:
+    - develop
+  

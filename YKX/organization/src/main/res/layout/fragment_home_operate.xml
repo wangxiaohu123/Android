@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:background="@mipmap/yybj"
+        android:layout_width="match_parent"
+        android:weightSum="3"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:src="@drawable/svg_home_operate_sys"
+                android:layout_marginTop="5dp"
+                android:layout_width="33dp"
+                android:layout_height="33dp"/>
+            <TextView
+                android:text="@string/operate_fragment_sys"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:textSize="@dimen/size_16"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:src="@drawable/svg_home_operate_sk"
+                android:layout_marginTop="5dp"
+                android:layout_width="33dp"
+                android:layout_height="33dp"/>
+            <TextView
+                android:text="@string/operate_fragment_sk"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:textSize="@dimen/size_16"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/wallet_view"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:src="@drawable/svg_home_operate_qb"
+                android:layout_marginTop="5dp"
+                android:layout_width="33dp"
+                android:layout_height="33dp"/>
+            <TextView
+                android:text="@string/operate_fragment_qb"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:textSize="@dimen/size_16"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="@string/operate_fragment_group_item1_title"
+            android:textColor="@color/default_second_text_color"
+            android:gravity="center_vertical"
+            android:background="@color/default_line_color"
+            android:paddingLeft="@dimen/list_view_item_margin_left"
+            android:textSize="@dimen/size_14"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"/>
+
+        <GridView
+            android:id="@+id/base_app_gridview"
+            android:numColumns="3"
+            android:layout_marginLeft="-1px"
+            android:layout_marginRight="-1px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/ykx_context_app_view"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="@string/operate_fragment_group_item2_ykx_vip_title"
+            android:textColor="@color/default_second_text_color"
+            android:gravity="center_vertical"
+            android:background="@color/default_line_color"
+            android:paddingLeft="@dimen/list_view_item_margin_left"
+            android:textSize="@dimen/size_14"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"/>
+
+
+        <GridView
+            android:id="@+id/ykx_app_gridview"
+            android:numColumns="3"
+            android:layout_marginLeft="-1px"
+            android:layout_marginRight="-1px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:background="@color/default_line_color"
+            android:layout_alignParentRight="true"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="@string/operate_fragment_group_item2_title"
+            android:textColor="@color/default_second_text_color"
+            android:gravity="center_vertical"
+            android:background="@color/default_line_color"
+            android:paddingLeft="@dimen/list_view_item_margin_left"
+            android:textSize="@dimen/size_14"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_width="match_parent"
+            android:layout_height="120dp">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:src="@drawable/svg_home_operate_cell2_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="27dp"/>
+                <TextView
+                    android:text="@string/operate_fragment_group_item2_cell_more"
+                    style="@style/CellMenuTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_height="20dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+        <View
+            android:background="@color/default_line_color"
+            android:layout_alignParentRight="true"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_invited_emp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ykx.organization.pages.home.operates.empmanager.InvitedEmpActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:text="@string/emp_manager_activity_invited_emp_share_itme1"
+            android:textColor="@color/default_second_text_color"
+            android:gravity="center_vertical"
+            android:background="@color/default_line_color"
+            android:paddingLeft="@dimen/list_view_item_margin_left"
+            android:textSize="@dimen/size_14"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"/>
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingTop="25dp"
+            android:paddingBottom="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/share_url_view"
+                android:layout_marginLeft="@dimen/list_view_item_margin_left"
+                android:layout_width="match_parent"
+                android:background="@drawable/edittext_style_line"
+                android:layout_alignParentLeft="true"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textSize="@dimen/size_14"
+                android:singleLine="true"
+                android:enabled="false"
+                android:includeFontPadding="false"
+                android:ellipsize="end"
+                android:textColor="@color/theme_main_background_color"
+                android:layout_toLeftOf="@+id/share_linek_view1"
+                android:layout_marginRight="-1dp"
+                android:layout_height="40dp"/>
+            <TextView
+                android:id="@+id/share_linek_view1"
+                android:text="@string/emp_manager_activity_invited_emp_share_itme1_link"
+                android:onClick="shareInfoAction"
+                android:gravity="center"
+                android:background="@drawable/corner_view_zj"
+                android:textColor="@color/white"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:layout_width="100dp"
+                android:layout_height="40dp"/>
+
+        </RelativeLayout>
+
+
+
+        <TextView
+            android:text="@string/emp_manager_activity_invited_emp_share_itme2"
+            android:textColor="@color/default_second_text_color"
+            android:gravity="center_vertical"
+            android:background="@color/default_line_color"
+            android:paddingLeft="@dimen/list_view_item_margin_left"
+            android:textSize="@dimen/size_14"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"/>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingTop="25dp"
+            android:paddingBottom="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/zxing_image_view"
+                android:src="@color/default_line_color"
+                android:layout_width="150dp"
+                android:layout_height="150dp"/>
+
+
+            <TextView
+                android:text="@string/emp_manager_activity_invited_emp_share_itme2_des"
+                android:gravity="center"
+                android:textColor="@color/default_second_text_color"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"/>
+
+            <TextView
+                android:text="@string/emp_manager_activity_invited_emp_share_itme2_link"
+                android:gravity="center"
+                android:onClick="shareInfoAction"
+                android:background="@drawable/textview_selector"
+                android:textColor="@color/white"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"/>
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:text="@string/emp_manager_activity_invited_emp_share_itme3"
+            android:textColor="@color/default_second_text_color"
+            android:gravity="center_vertical"
+            android:background="@color/default_line_color"
+            android:paddingLeft="@dimen/list_view_item_margin_left"
+            android:textSize="@dimen/size_14"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"/>
+
+        <ListView
+            android:id="@+id/emp_list_view"
+            android:divider="@null"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></ListView>
+
+    </LinearLayout>
+
+
+</ScrollView>

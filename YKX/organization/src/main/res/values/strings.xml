@@ -1,0 +1,599 @@
+<resources>
+    <string name="app_name">优课学机构版</string>
+
+
+    <string name="sys_next">下一步</string>
+
+    <string name="sys_type_selected_title">类型选择</string>
+    <string name="sys_num_selected_title">数字选择</string>
+
+
+    <string name="sys_delete">删除</string>
+    <string name="sys_edit">编辑</string>
+
+    <string name="sys_null">暂无</string>
+    <string name="sys_submit_toast">正在执行中</string>
+
+    <string name="sys_toast_success">成功</string>
+    <string name="sys_toast_fail">失败</string>
+
+    <string name="sys_pic_edit_title">照片查看</string>
+    <string name="sys_input_hint">请输入</string>
+
+    <string name="sys_base_pic_and_message_edit">图文编辑器</string>
+    <string name="csys_base_pic_and_message_info">图文详情查看</string>
+
+    <string name="sys_save_fail_toast">保存失败</string>
+    <string name="sys_save_and_exit_toast">你还没有保存数据,是否确认放弃保存?</string>
+    <string name="sys_upload_pic">上传照片</string>
+
+    <string name="sys_role_fail_toast">没有相关权限!</string>
+
+    <string name="sys_version_info_defailt_title">优课学_机构版V%1$s来啦！</string>
+    <string name="sys_activity_title_pic_message">图文编辑</string>
+
+    <string name="sys_activity_user_agreement_title">用户协议内容</string>
+
+    <!-- web view title-->
+    <string name="activity_webview_title_brand">品牌详情</string>
+    <string name="activity_webview_title_curriculum">班课详情</string>
+
+
+    <string name="app_tip">提示</string>
+    <string name="pay_result_callback_msg" formatted="false">微信支付结果：%s</string>
+
+    <!-- 用户登录模块 -->
+
+    <string name="phone_code_textview_reset">重新获取(%1$ss)</string>
+
+    <string name="login_textview_login">登录</string>
+    <string name="login_textview_forget_password">忘记密码?</string>
+    <string name="login_textview_register_password">免费入驻</string>
+    <string name="login_edittext_input_phone">输入优课学账号(注册手机号)</string>
+    <string name="login_edittext_input_password">输入密码</string>
+
+    <string name="login_success_toast">登录成功</string>
+    <string name="login_fail_toast">登录失败</string>
+
+    <string name="login_edittext_input_phone_toast_null">请输入手机号</string>
+    <string name="login_edittext_input_phone_toast_num_excption">手机号格式错误</string>
+
+    <string name="login_edittext_input_pw_toast_null">请输入密码</string>
+    <string name="login_edittext_input_pw_toast_num_excption">请输入6-16位密码</string>
+
+    <!-- 品牌选择-->
+    <string name="selected_brand_activity_title">选择品牌</string>
+    <string name="selected_brand_activity_notice">该手机号已绑定%1$s个品牌,请选择</string>
+
+
+    <!-- 用户注册 -->
+    <string name="register_edittext_input_phone">(+86) 输入手机号码</string>
+    <string name="register_edittext_input_verification_code">输入验证码</string>
+    <string name="register_edittext_get_verification_code">获取验证码</string>
+    <string name="register_textview_register">注册</string>
+    <string name="register_edittext_get_verification_code_toast">请获取验证码</string>
+
+    <string name="register_textview_register_user_agreement1">注册代表你已阅读并同意</string>
+    <string name="register_textview_register_user_agreement2">《优课学用户协议》</string>
+    <string name="register_textview_register_back_login">返回登录</string>
+
+    <!-- 忘记密码 -->
+    <string name="forget_password_textview_title">找回密码</string>
+    <string name="forget_password_textview_next">下一步</string>
+    <string name="set_password_textview_commint">完成</string>
+
+
+    <!-- 设置密码 -->
+    <string name="set_password_textview_title">设置密码</string>
+    <string name="find_password_textview_title">找回密码</string>
+    <string name="set_password_edittext_input">输入6-16位密码</string>
+    <string name="set_password_edittext_new_input">输入6-16位新密码</string>
+    <string name="user_center_about_us_title">关于我们</string>
+
+    <!-- 主界面 -->
+    <string name="home_title">主界面</string>
+
+    <!-- 认证主界面 -->
+    <string name="authentication_home_title">申请实名登记</string>
+    <string name="authentication_home_item1_yzzz">营业执照登记</string>
+    <string name="authentication_home_item2_bxxkz">办学许可证登记</string>
+    <string name="authentication_home_text_des">登记后,我能享受到这些服务～</string>
+
+
+    <string name="authentication_home_text_item1_title">班课推广</string>
+    <string name="authentication_home_text_item2_title">品牌推广</string>
+    <string name="authentication_home_text_item3_title">名师推广</string>
+    <string name="authentication_home_text_item4_title">运营管理</string>
+    <string name="authentication_home_text_item5_title">营销支持</string>
+    <string name="authentication_home_text_item6_title">统计分析</string>
+
+    <string name="authentication_home_text_wait_des">暂不登记,先看看～</string>
+
+    <!-- 办学认证登记主页面 -->
+
+    <!--<string name="authentication_register_main_bxxk_sample_bxxkz_frist"> · 请按照示例图提供图。</string>-->
+
+    <string name="authentication_register_main_bxxk_sample_bxxkz_bxxkzj"> · 请按照示例图提供办学许可证件图。</string>
+    <string name="authentication_register_main_bxxk_sample_bxxkz_ppsqs"> · 请按照示例图提供品牌授权书。</string>
+    <string name="authentication_register_main_bxxk_sample_bxxkz_sbzcz"> · 请按照示例图提供商标注册证图。</string>
+    <string name="authentication_register_main_bxxk_sample_bxxkz_sfzbm"> · 请按照示例图提供身份证背面图。</string>
+    <string name="authentication_register_main_bxxk_sample_bxxkz_sfzzm"> · 请按照示例图提供身份证正面图。</string>
+    <string name="authentication_register_main_bxxk_sample_bxxkz_yyzz"> · 请按照示例图提供营业执照图。</string>
+    <string name="authentication_register_main_bxxk_sample_bxxkz_second"> · 照片要四角对齐,若模糊,太暗,有遮挡,则不与通过。</string>
+
+    <string name="authentication_register_main_bxxk_title">办学许可登记</string>
+    <string name="authentication_register_main_bxxk_notice_des">完成实名登记,学生就能搜索到你们啦～</string>
+    <string name="authentication_register_main_bxxk_xxmc">学校名称</string>
+    <string name="authentication_register_main_bxxk_xxmc_hint">办学许可证上单位名称</string>
+    <string name="authentication_register_main_bxxk_bxxkz">办学许可证</string>
+    <string name="authentication_register_main_bxxk_cksl">查看示例</string>
+    <string name="authentication_register_main_bxxk_fzrsfz_zm">负责人身份证(正面)</string>
+    <string name="authentication_register_main_bxxk_fzrsfz_fm">负责人身份证(反面)</string>
+    <string name="authentication_register_main_bxxk_szcs">所在城市</string>
+    <string name="authentication_register_main_bxxk_szcs_hint">办学许可证上的地址</string>
+
+
+    <string name="authentication_register_main_yyzz_title">营业执照登记</string>
+    <string name="authentication_register_main_yyzz_notice_des">完成实名登记,学生就能搜索到你们啦～</string>
+    <string name="authentication_register_main_yyzz_xxmc">公司名称</string>
+    <string name="authentication_register_main_yyzz_xxmc_hint">营业执照单位名称</string>
+    <string name="authentication_register_main_yyzz_bxxkz">营业执照副本</string>
+    <string name="authentication_register_main_yyzz_cksl">查看示例</string>
+    <string name="authentication_register_main_yyzz_fzrsfz_zm">法人身份证(正面)</string>
+    <string name="authentication_register_main_yyzz_fzrsfz_fm">法人身份证(反面)</string>
+    <string name="authentication_register_main_yyzz_szcs">所在城市</string>
+    <string name="authentication_register_main_yyzz_szcs_hint">营业执照上的所住地址</string>
+
+    <string name="authentication_register_main_xxmc_toast">请填写学校名称</string>
+    <string name="authentication_register_main_xxbxxk_toast">请上传办学许可证</string>
+    <string name="authentication_register_main_xxfzrsfzzm_toast">请上传负责人身份证(正面)</string>
+    <string name="authentication_register_main_xxfzrsfzfm_toast">请上传负责人身份证(反面)</string>
+
+    <string name="authentication_register_main_qymc_toast">请填写公司名称</string>
+    <string name="authentication_register_main_qyyyzffb_toast">请上传营业执照副本</string>
+    <string name="authentication_register_main_qyfrsfzzm_toast">请上传法人身份证(正面)</string>
+    <string name="authentication_register_main_qyfrsfzfm_toast">请上传法人身份证(反面)</string>
+
+    <string name="authentication_register_main_city_toast">请选择所在城市</string>
+
+
+    <string name="authentication_register_next_bxxk_notice_des">留下联系信息,方便联系到你～</string>
+    <string name="authentication_register_next_bxxk_ywlxr">业务联系人</string>
+    <string name="authentication_register_next_bxxk_ywlxr_hint">请输入联系人名称</string>
+    <string name="authentication_register_next_bxxk_lxsj">联系手机</string>
+    <string name="authentication_register_next_bxxk_lxsj_hint">请输入联系人手机</string>
+    <string name="authentication_register_next_bxxk_zjdh">座机电话</string>
+    <string name="authentication_register_next_bxxk_zjdh_hint">请输入公司座机</string>
+    <string name="authentication_register_next_bxxk_tjdj">提交登记</string>
+
+
+    <string name="authentication_register_result_info_title">申请实名登记</string>
+
+    <string name="authentication_register_result_state0_title">实名登记审核中...</string>
+    <string name="authentication_register_result_state0_des">优课学会在三个工作日内完成审核,审核结果请关注短信通知.</string>
+
+    <string name="authentication_register_result_state1_title">已完成实名认证!</string>
+
+    <string name="authentication_register_result_state2_title">审核未通过!</string>
+    <string name="authentication_register_result_state2_des">未通过的原因:</string>
+
+
+    <!-- home界面 -->
+    <string name="home_nav_item_gzt">工作台</string>
+    <string name="home_nav_item_ll">联络</string>
+    <string name="home_nav_item_jx">教学</string>
+    <string name="home_nav_item_yy">运营</string>
+
+    <!-- 个人中心 -->
+    <string name="persion_center_info_jgname">这里显示机构名称</string>
+    <string name="persion_center_info_jgphone">135 5100 2323</string>
+    <string name="persion_center_info_jg_persion_info">个人资料</string>
+    <string name="persion_center_info_jg_auto">已实名登记</string>
+
+    <string name="persion_center_info_add_brand"> + 添加品牌</string>
+
+    <string name="persion_center_info_jg_ppyy">品牌主页</string>
+    <string name="persion_center_info_jg_jgzy">机构主页</string>
+    <string name="persion_center_info_jg_jgqb">机构钱包</string>
+    <string name="persion_center_info_jg_jydd">交易订单</string>
+    <string name="persion_center_info_jg_khwf">客户服务</string>
+    <string name="persion_center_info_jg_yjfk">意见反馈</string>
+    <string name="persion_center_info_jg_sz">设置</string>
+
+    <string name="persion_center_info_edit_userinfo">修改用户信息</string>
+    <string name="persion_center_info_edit_userinfo_header">头像</string>
+    <string name="persion_center_info_edit_userinfo_notices">-你正修改用户信息-</string>
+
+
+    <!-- 设置界面-->
+    <string name="persion_center_info_jg_setting_message_push">消息推送设置</string>
+    <string name="persion_center_info_jg_setting_change_pw">修改密码</string>
+    <string name="persion_center_info_jg_setting_check_update">检测更新</string>
+    <string name="persion_center_info_jg_setting_about_us">关于我们</string>
+    <string name="persion_center_info_jg_setting_logout">退出登录</string>
+
+
+    <string name="persion_center_info_jg_setting_change_pw_title">安全验证</string>
+    <string name="persion_center_info_jg_setting_change_pw_notices">设置密码需要先验证你的手机号码</string>
+    <string name="persion_center_info_jg_setting_change_yz_notices">已验证注册手机</string>
+    <string name="persion_center_info_jg_setting_change_pw_set_title">设置登录密码</string>
+
+    <string name="persion_center_info_jg_setting_change_pw_set_do">完成</string>
+
+    <!-- 运营界面-->
+    <string name="operate_fragment_sys">扫一扫</string>
+    <string name="operate_fragment_sk">收款</string>
+    <string name="operate_fragment_qb">U钱包</string>
+
+    <string name="operate_fragment_group_item1_title">基础应用</string>
+
+    <!--<string name="operate_fragment_group_item1_cell_jgxq">机构/校区</string>-->
+    <string name="operate_fragment_group_item1_cell_xqbk">校区管理</string>
+    <string name="operate_fragment_group_item1_cell_ddgl">订单管理</string>
+    <string name="operate_fragment_group_item1_cell_xygl">学员管理</string>
+    <string name="operate_fragment_group_item1_cell_yggl">员工管理</string>
+    <string name="operate_fragment_group_item1_cell_pjgl">评价管理</string>
+    <string name="operate_fragment_group_item1_cell_yxzc">营销支撑</string>
+    <string name="operate_fragment_group_item1_cell_yytj">运营统计</string>
+
+
+    <string name="operate_fragment_group_item2_ykx_vip_ppgl">品牌管理</string>
+    <string name="operate_fragment_group_item2_ykx_vip_smdj">实名登记</string>
+
+
+    <string name="operate_fragment_group_item2_title">推荐应用</string>
+    <string name="operate_fragment_group_item2_ykx_vip_title">优课学登记</string>
+    <string name="operate_fragment_group_item2_cell_more">获取更多</string>
+
+
+    <!-- 新建机构界面-->
+    <string name="organization_activity_title">新建机构</string>
+    <string name="organization_activity_nav_text">1.新建机构;2.新建校区</string>
+    <string name="organization_activity_nav_xjjg_text">新建机构</string>
+    <string name="organization_activity_nav_xjxq_text">新建校区</string>
+    <string name="organization_activity_nav_xjbk_text">新建班课</string>
+
+
+    <string name="organization_activity_jg_jc">机构简称</string>
+    <string name="organization_activity_jg_jc_hint">请输入机构名称</string>
+    <string name="organization_activity_jg_logo">机构logo</string>
+    <string name="organization_activity_jg_logo_toast">请上传机构logo</string>
+    <string name="organization_activity_jg_lm">机构类目</string>
+    <string name="organization_activity_jg_lm_toast">请选择机构类目</string>
+    <string name="organization_activity_jg_lm_hint">请选择</string>
+    <string name="organization_activity_jg_null_toast">还没有创建机构哦!</string>
+
+    <string name="organization_activity_jg_save_and_create_xx">保存,并新建校区</string>
+
+
+    <string name="curriculum_activity_nav_title">正在为%1$s新建校区</string>
+
+    <string name="curriculum_activity_title">新建校区</string>
+    <string name="curriculum_activity_edit_title">编辑校区</string>
+
+
+    <string name="curriculum_activity_list_title">校区列表</string>
+
+    <!-- 新建校区界面-->
+
+    <string name="campus_activity_add_campus_toast">没有校区,请新建校区.</string>
+    <string name="campus_activity_add_max_campus_toast">已经达到最大新建校区数.</string>
+    <string name="campus_activity_add_campus_info_bk_pics">校区照片</string>
+    <string name="campus_activity_list_null_title">已新建 %1$d 个校区,剩余 %2$d 个</string>
+    <string name="campus_activity_nav_text">1.新建校区;2.新建班课</string>
+    <string name="campus_activity_add_xqmc">校区名称</string>
+    <string name="campus_activity_add_xqmc_hint">请输入校区名称</string>
+    <string name="campus_activity_add_xqdz">校区地址</string>
+    <string name="campus_activity_add_xqdz_hint">请选择校区地址</string>
+    <string name="campus_activity_add_xqdh">校区电话</string>
+    <string name="campus_activity_add_xqdh_hint">请输入校区联系电话</string>
+    <string name="campus_activity_add_xqdh_num_toast">校区电话格式不正确</string>
+    <string name="campus_activity_add_xqdh_pics_toast">请上传校区照片</string>
+    <string name="campus_activity_submit">保存</string>
+    <string name="campus_activity_list_manager">班课管理</string>
+    <string name="campus_activity_add_text"> + 新建校区</string>
+    <string name="campus_activity_add_xqdz_toast">校区位置信息获取失败!</string>
+
+    <!-- 班课管理-->
+
+    <string name="curriculum_activity_add_max_curriculum_toast">已经达到最大新建班课数.</string>
+    <string name="curriculum_activity_add_info_bkmc">班课名称:</string>
+    <string name="curriculum_activity_add_info_kmlb">班课类目:</string>
+    <string name="curriculum_activity_add_info_bkjj">班课简介:</string>
+    <string name="curriculum_activity_list_null_message">该校区还未设置班课哦～</string>
+
+
+    <string name="curriculum_activity_add_info_des_bkjj">填写班课简介</string>
+    <string name="curriculum_activity_add_info_des_content_bkjj">班课简介,请填写指导文字</string>
+
+    <string name="curriculum_activity_listview_to_update">去修改</string>
+    <string name="curriculum_activity_listview_title">班课列表</string>
+    <string name="curriculum_activity_sf_type_list_title">收费方式</string>
+    <string name="curriculum_activity_add_title">新建班课</string>
+    <string name="curriculum_activity_add_plus"> + 新建班课</string>
+    <string name="curriculum_activity_editview_title">编辑班课</string>
+    <string name="curriculum_activity_add_title_save">保存</string>
+    <string name="curriculum_activity_add_item1_title">班课信息</string>
+    <string name="curriculum_activity_add_item1_title_time">上课时间</string>
+    <string name="curriculum_activity_add_item1_title_teacher">上课老师</string>
+    <string name="curriculum_activity_add_item1_title_online_bm">是否接受线上报名</string>
+    <string name="curriculum_activity_add_item1_title_online_price">单次课价</string>
+
+    <string name="curriculum_activity_add_add">添加</string>
+    <string name="curriculum_activity_add_edit">编辑</string>
+    <string name="curriculum_activity_add_default_null">你还没有设置哦</string>
+    <string name="curriculum_activity_add_campus_info_title">班课信息</string>
+    <string name="curriculum_activity_add_campus_info_bk_name">班课名称</string>
+    <string name="curriculum_activity_add_campus_info_bk_notics_title">-你正在填写班课基础信息-</string>
+    <string name="curriculum_activity_add_campus_info_bk_type">班课类目</string>
+    <string name="curriculum_activity_add_campus_info_bk_js">班课简介</string>
+    <string name="curriculum_activity_add_campus_info_bk_pics">班课照片</string>
+    <string name="curriculum_activity_add_campus_info_bk_student_count">招生人数</string>
+    <string name="curriculum_activity_add_campus_info_bk_ssxq">班课所属校区</string>
+    <string name="curriculum_activity_add_campus_info_bk_cs">班课次数</string>
+    <string name="curriculum_activity_add_campus_info_bk_sf_type">收费方式</string>
+    <string name="curriculum_activity_add_campus_info_bk_sf_type_toast">请选择收费方式</string>
+    <string name="curriculum_activity_add_campus_info_bk_sf_type_time">班课次数</string>
+    <string name="curriculum_activity_add_campus_info_bk_sf_type_times_toast">请选择次数</string>
+    <string name="curriculum_activity_add_campus_info_bk_price">班课价格</string>
+    <string name="curriculum_activity_add_campus_info_bk_zsrs">招生%1$s人</string>
+    <string name="curriculum_activity_add_campus_info_bk_zsjg">%1$s元</string>
+    <!-- .2f表示的是保留三位小数的浮点数  -->
+    <!--<string name="book">书名 (字符串)%1$s,作者(字符串)%2$s,编号(整数)%3$d,价格(浮点型)：%4$.2f</string>-->
+    <string name="curriculum_activity_add_campus_add_times_name"> + 新增上课时间</string>
+    <string name="curriculum_activity_add_campus_info_bk_input">请输入</string>
+    <string name="curriculum_activity_add_campus_info_bk_selectd">请选择</string>
+    <string name="curriculum_activity_add_campus_info_bk_go_input">去填写</string>
+    <string name="curriculum_activity_add_campus_info_bk_plase_input">请填写价格</string>
+    <string name="curriculum_activity_add_campus_info_bk_start_time">班课开始日</string>
+    <string name="curriculum_activity_add_campus_info_bk_end_time">班课结束日</string>
+    <string name="curriculum_activity_add_campus_time_title">设置上课时间</string>
+
+    <string name="curriculum_activity_add_campus_info_bk_end_dy_start">结束时间不能小于开始时间</string>
+
+    <string name="curriculum_activity_add_campus_time_select_data">请选择班课日期.</string>
+
+    <string name="curriculum_activity_add_campus_time_title_start_date">开始日期</string>
+    <string name="curriculum_activity_add_campus_time_title_end_date">结束日期</string>
+    <string name="curriculum_activity_add_campus_time_title_start_time">开始时间</string>
+    <string name="curriculum_activity_add_campus_time_title_end_time">结束时间</string>
+    <string name="curriculum_activity_add_campus_time_view_last">上一步</string>
+    <string name="curriculum_activity_add_campus_time_view_next">下一步</string>
+    <string name="curriculum_activity_add_campus_time_view_cftype">重复方式</string>
+    <string name="curriculum_activity_add_campus_time_view_week">按周</string>
+    <string name="curriculum_activity_add_campus_time_view_month">按月</string>
+    <string name="curriculum_activity_add_campus_time_view_cannel">取消</string>
+    <string name="curriculum_activity_add_campus_time_view_sure">确认</string>
+    <string name="curriculum_activity_add_campus_teacher_title">班课老师选择</string>
+
+
+    <string name="curriculum_activity_add_bkmc_toast">请输入班课名称</string>
+    <string name="curriculum_activity_add_bklm_toast">请选择班课类目</string>
+    <string name="curriculum_activity_add_bkjj_toast">请输入班课简介</string>
+    <string name="curriculum_activity_add_bkzp_toast">请上传班课照片</string>
+    <string name="curriculum_activity_add_bkzp_max_toast">上传班课照片超过六张啦!</string>
+    <string name="curriculum_activity_add_bkzsrs_toast">请选择招生人数</string>
+    <string name="curriculum_activity_add_bksffs_toast">请选择收费方式</string>
+    <string name="curriculum_activity_add_bkbccs_toast">请选择班课次数</string>
+    <string name="curriculum_activity_add_bkjg_toast">请输入班课价格</string>
+    <string name="curriculum_activity_add_bkkssj_toast">请选择班课开始时间</string>
+    <string name="curriculum_activity_add_bkjssj_toast">请选择班课结束时间</string>
+    <string name="curriculum_activity_add_bkxq_toast">请选择班课校区</string>
+
+
+    <!-- 教学模块 -->
+    <string name="jx_fragment_base_item_bkgl">班课管理</string>
+    <string name="jx_fragment_base_item_kjjy">课件讲义</string>
+    <string name="jx_fragment_base_item_xykq">学员考勤</string>
+    <string name="jx_fragment_base_item_lskq">老师考勤</string>
+    <string name="jx_fragment_base_item_jxtj">教学统计</string>
+
+
+    <!-- 品牌管理-->
+    <string name="brandmanager_activity_title">品牌管理</string>
+    <string name="brandmanager_activity_base_item_name">基础信息</string>
+    <string name="brandmanager_activity_base_item_ppmcwsz">品牌名称未设置</string>
+    <string name="brandmanager_activity_base_item_pwp">品牌基础信息完整度</string>
+    <string name="brandmanager_activity_base_item_pwp_init">品牌基础信息完整度0%</string>
+    <string name="brandmanager_activity_base_item_pprz">品牌认证</string>
+    <string name="brandmanager_activity_base_item_wrz">未认证</string>
+    <string name="brandmanager_activity_base_item_qy">完成品牌商标认证，将会获得如下权益</string>
+    <string name="brandmanager_activity_base_item_qy1">排名更靠前，更容易被客户搜索到</string>
+    <string name="brandmanager_activity_base_item_qy2">专属官方认证图标，平台优先推荐</string>
+    <string name="brandmanager_activity_base_item_qy3">品牌形象保护</string>
+    <string name="brandmanager_activity_base_item_sq">申请品牌商标认证</string>
+
+
+    <string name="brandmanager_activity_base_item_state1">审核未通过!</string>
+    <string name="brandmanager_activity_base_item_state11">未通过的原因:</string>
+    <string name="brandmanager_activity_base_item_state2">品牌认证审核中...</string>
+    <string name="brandmanager_activity_base_item_state21">优课学会在三个工作日内完成审核,审核结果请关注短信通知.</string>
+    <string name="brandmanager_activity_base_item_state4">已完成品牌认证!</string>
+    <string name="brandmanager_activity_base_item_reauto">重新申请</string>
+
+
+    <string name="brandmanager_activity_base_info_selected_fail_toast">选择品牌失败!</string>
+    <string name="brandmanager_activity_base_info_title">品牌基础信息</string>
+    <string name="brandmanager_activity_base_info_item_ppmc">品牌名称</string>
+    <string name="brandmanager_activity_base_info_item_ppmc_hint">请输入品牌名称</string>
+    <string name="brandmanager_activity_base_info_item_pglogo">品牌LOGO</string>
+    <string name="brandmanager_activity_base_info_item_jxtx">教学体系</string>
+    <string name="brandmanager_activity_base_info_item_jxtd">教学团队</string>
+    <string name="brandmanager_activity_base_info_item_ppry">品牌荣誉</string>
+    <string name="brandmanager_activity_base_info_item_xqhj">校区环境</string>
+    <string name="brandmanager_activity_base_info_item_yytd">运营团队</string>
+
+    <string name="brandmanager_activity_base_info_mamager_unable_manage">审核中,暂时不能进行品牌管理!</string>
+    <string name="brandmanager_activity_base_info_mamager_title">品牌管理</string>
+    <string name="brandmanager_activity_base_info_item_mamager_ppsblx">品牌商标类型</string>
+    <string name="brandmanager_activity_base_info_item_mamager_ppsblx_hint">图形商标</string>
+    <string name="brandmanager_activity_base_info_item_mamager_ppsbzch">品牌商标注册号</string>
+    <string name="brandmanager_activity_base_info_item_mamager_ppsbzch_hint">请输入品牌商标注册号</string>
+    <string name="brandmanager_activity_base_info_item_mamager_ppsbzcz">品牌商标注册证</string>
+    <string name="brandmanager_activity_base_info_item_mamager_gz">品牌授权书(盖章)</string>
+    <string name="brandmanager_activity_base_info_item_mamager_ppsbzcz_toast">请上传品牌商标注册证</string>
+    <string name="brandmanager_activity_base_info_item_mamager_gz_toast">请上传品牌授权书(盖章)</string>
+    <string name="brandmanager_activity_base_info_item_mamager_cksl">查看示例</string>
+    <string name="brandmanager_activity_base_info_item_mamager_sqsmb">授权书模版</string>
+    <string name="brandmanager_activity_base_info_item_mamager_xyb">下一步</string>
+    <string name="brandmanager_activity_base_info_mamager_dj_title">品牌登记</string>
+    <string name="brandmanager_activity_base_info_item_mamager_ywlxr">业务联系人</string>
+    <string name="brandmanager_activity_base_info_item_mamager_lxsj">联系手机</string>
+    <string name="brandmanager_activity_base_info_item_mamager_zjdh">座机电话</string>
+    <string name="brandmanager_activity_base_info_item_mamager_ywlxr_hint">请输入业务联系人姓名</string>
+    <string name="brandmanager_activity_base_info_item_mamager_lxsj_hint">请输入业务联系人手机号</string>
+    <string name="brandmanager_activity_base_info_item_mamager_zjdh_hint">请输入公司座机</string>
+    <string name="brandmanager_activity_base_info_item_mamager_tj">提交认证</string>
+
+    <string name="brandmanager_activity_base_info_item_mamager_notice">1.申请品牌登记 2.平台审核</string>
+
+
+    <string name="brandmanager_activity_modle_email_title">获取协议模版</string>
+    <string name="brandmanager_activity_modle_email_notices">亲,留下邮箱,我们将模版发送给你。</string>
+    <string name="brandmanager_activity_modle_email_input_hint">请输入常用邮箱地址</string>
+    <string name="brandmanager_activity_modle_email_exception_hint">邮箱格式不正确</string>
+    <string name="brandmanager_activity_modle_email_send_success_hint">邮箱发送成功...</string>
+    <string name="brandmanager_activity_modle_email_send_fail_hint">邮箱发送失败...</string>
+    <string name="brandmanager_activity_modle_email_submit">获取模版协议</string>
+
+    <!-- 员工管理-->
+    <string name="emp_manager_activity_main_title">员工管理</string>
+    <string name="emp_manager_activity_main_add_emp">团队邀请</string>
+    <string name="emp_manager_activity_main_invited_emp">+ 添加员工</string>
+
+
+    <string name="emp_manager_activity_add_title">添加员工</string>
+    <string name="emp_manager_activity_add_notice">-你正在为品牌添加员工-</string>
+    <string name="emp_manager_activity_add_name">名称</string>
+    <string name="emp_manager_activity_add_gander">性别</string>
+    <string name="emp_manager_activity_add_phone">手机号</string>
+    <string name="emp_manager_activity_add_zw">职位</string>
+    <string name="emp_manager_activity_add_skkm">授课科目</string>
+    <string name="emp_manager_activity_add_xmmc">所属校区</string>
+    <string name="emp_manager_activity_add_jj">简介</string>
+    <string name="emp_manager_activity_add_ll">履历</string>
+    <string name="emp_manager_activity_add_ry">荣誉</string>
+    <string name="emp_manager_activity_add_edit_text">重新编辑内容</string>
+    <string name="emp_manager_activity_add_gnqx">功能权限</string>
+    <string name="emp_manager_activity_add_gnqx_hint">配置员工对应的功能权限</string>
+    <string name="emp_manager_activity_add_bc">保存</string>
+
+    <string name="emp_manager_activity_add_hint1">请选择</string>
+    <string name="emp_manager_activity_add_hint2">请输入</string>
+    <string name="emp_manager_activity_add_hint3">去填写</string>
+
+
+    <string name="emp_manager_activity_name_toast">请输入姓名</string>
+    <string name="emp_manager_activity_name_max_toast">姓名不能超过6个字</string>
+    <string name="emp_manager_activity_gender_toast">请选择性别</string>
+    <string name="emp_manager_activity_phone_toast">请输入手机号码</string>
+    <string name="emp_manager_activity_zw_toast">请选择职位</string>
+    <string name="emp_manager_activity_zw_selected">选择职位</string>
+    <string name="emp_manager_activity_campus_selected">请选择校区</string>
+
+    <string name="emp_manager_activity_roles_selected_toast">请设置员工权限</string>
+
+
+    <string name="emp_manager_activity_invited_emp_title">团队邀请</string>
+    <string name="emp_manager_activity_invited_emp_share_itme1">通过链接邀请</string>
+    <string name="emp_manager_activity_invited_emp_share_itme1_link">分享链接</string>
+    <string name="emp_manager_activity_invited_emp_share_itme2">通过团队二维码邀请</string>
+    <string name="emp_manager_activity_invited_emp_share_itme2_des">扫一扫上方二维码，加入团队</string>
+    <string name="emp_manager_activity_invited_emp_share_itme2_link">分享二维码</string>
+    <string name="emp_manager_activity_invited_emp_share_itme3">申请人列表</string>
+    <string name="emp_manager_activity_invited_emp_share_itme3_cell_tg">通过</string>
+    <string name="emp_manager_activity_invited_emp_share_itme3_cell_jj">拒绝</string>
+    <string name="emp_manager_activity_invited_emp_share_itme3_cell_ytg">已通过</string>
+    <string name="emp_manager_activity_invited_emp_share_itme3_cell_yjj">已拒绝</string>
+
+    <string name="emp_manager_activity_invited_emp_reject_title">请输入拒绝理由</string>
+    <string name="emp_manager_activity_invited_emp_reject_hint">若不填，则不通知对方</string>
+
+
+    <string name="emp_manager_activity_role_manager_title">功能权限</string>
+    <string name="emp_manager_activity_role_manager_notices">你正在为(%1$s)设置功能权限</string>
+
+    <!-- 工作台-->
+    <string name="workbench_fragment_dj_title">登记</string>
+    <string name="workbench_fragment_dj_smdj">实名登记</string>
+    <string name="workbench_fragment_dj_ppdj">品牌登记</string>
+    <string name="workbench_fragment_dj_wkt">未开通</string>
+    <string name="workbench_fragment_dj_ykt">已开通</string>
+    <string name="workbench_fragment_dj_smdj_des">立即开通，线上推广班课、品牌</string>
+    <string name="workbench_fragment_dj_ppdj_des">排名更靠前、品牌推荐、专属标识</string>
+
+
+    <string name="workbench_fragment_jykg_title">经营概况(%1$s)</string>
+    <string name="workbench_fragment_jykg_jrfk">今日访客</string>
+    <string name="workbench_fragment_jykg_jrzc">今日咨询</string>
+    <string name="workbench_fragment_jykg_jrdd">今日订单</string>
+    <string name="workbench_fragment_jykg_ddje">订单金额(元)</string>
+
+    <string name="workbench_fragment_xqbkls_title">校区/老师/班课</string>
+    <string name="workbench_fragment_xqbkls_bk">班课数</string>
+    <string name="workbench_fragment_xqbkls_ls">老师数</string>
+    <string name="workbench_fragment_xqbkls_xq">校区数</string>
+
+
+    <string name="workbench_fragment_jrbd_title">今日必读</string>
+    <string name="workbench_fragment_jrbd_item1">【重要消息】优课学机构版V1.0正式发布!</string>
+
+
+    <!-- about us-->
+    <string name="activity_about_us_item1">优课学是汇聚教育行业顶尖专家及互联网开发精英，充分发掘教育培训行业资源并有效整合，运用“互联网+”理念，结合教育培训行业特殊运营规律，形成独具特色的、专门服务于教育培训机构的互联平台。</string>
+    <string name="activity_about_us_item2">优课学致力于为教育培训机构打造个性展示空间，呈现优质课程，提供全面教育资讯，配合科学管理，为学员提供报名、选课、支付、评价等网络平台服务。</string>
+    <string name="activity_about_us_item3">优课学让教育培训机构拥有呈现领地，科学管理，优化运营，精准营销，定位宣传。</string>
+    <string name="activity_about_us_item4">优课学是培训机构提升品牌打造良好口碑的唯一捷径。</string>
+    <string name="activity_about_us_item5">优课学强大的管理功能及宣传推广，让机构的运营效率大大提升，同时为优课学会员提供海量教育资讯及优质课程。</string>
+    <string name="activity_about_us_item6">优课学专注于教育培训机构的良性发展与学员的能力提升，致力于打造健康的教育培训互联生态圈。</string>
+
+    <!-- 钱包-->
+    <string name="activity_operate_wallet_main_title">钱包(%1$s品牌)</string>
+    <string name="activity_operate_wallet_main_ye">余额</string>
+    <string name="activity_operate_wallet_main_ub">U 币</string>
+    <string name="activity_operate_wallet_main_yhq">优惠券</string>
+    <string name="activity_operate_wallet_main_txzh">提现账户</string>
+    <string name="activity_operate_wallet_main_fb">发票</string>
+
+    <string name="activity_operate_wallet_main_y">元</string>
+    <string name="activity_operate_wallet_main_g">个</string>
+    <string name="activity_operate_wallet_main_z">张</string>
+
+    <string name="activity_operate_wallet_ub_title">U币</string>
+    <string name="activity_operate_wallet_ub_s">U币数(个)</string>
+    <string name="activity_operate_wallet_ub_ubsm">U币(说明)</string>
+    <string name="activity_operate_wallet_ub_ubcz">U币充值</string>
+    <string name="activity_operate_wallet_ub_ubmx">U币明细</string>
+    <string name="activity_operate_wallet_ub_yemx">余额明细</string>
+    <string name="activity_operate_wallet_ub_cz">充值</string>
+    <string name="activity_operate_wallet_ub_xf">消费</string>
+
+    <string name="activity_operate_wallet_common_problem_title">常见问题</string>
+
+    <string name="activity_operate_wallet_ub_detail_title">U币明细</string>
+
+    <string name="activity_operate_wallet_ub_recharge_title">U币充值</string>
+    <string name="activity_operate_wallet_ub_recharge_czsl">充值数量</string>
+    <string name="activity_operate_wallet_ub_recharge_xzfzfs">选择支付方式</string>
+
+    <string name="activity_operate_wallet_ub_recharge_xzfzfs_zfb">支付宝支付</string>
+    <string name="activity_operate_wallet_ub_recharge_xzfzfs_wx">微信支付</string>
+    <string name="activity_operate_wallet_ub_recharge_xzfzfs_yw">余额支付</string>
+
+    <string name="activity_operate_wallet_ub_recharge_cz">确认充值</string>
+
+
+    <string name="activity_operate_wallet_ub_one_detail_title">明细</string>
+    <string name="activity_operate_wallet_ub_one_detail_lsh">流水号</string>
+    <string name="activity_operate_wallet_ub_one_detail_lx">类型</string>
+    <string name="activity_operate_wallet_ub_one_detail_sl">数量</string>
+    <string name="activity_operate_wallet_ub_one_detail_xfx">消费项</string>
+    <string name="activity_operate_wallet_ub_one_detail_ubs">账户U币数</string>
+    <string name="activity_operate_wallet_ub_one_detail_sj">时间</string>
+    <string name="activity_operate_wallet_ub_one_detail_zffs">支付方式</string>
+    <string name="activity_operate_wallet_ub_one_detail_jyh">交易号</string>
+
+
+
+
+</resources>

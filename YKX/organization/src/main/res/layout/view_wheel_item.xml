@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/date_time_content_view"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:padding="1px"
+        android:background="@color/default_line_color"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="5dp"
+            android:background="@color/default_unselected_color"
+            android:gravity="center"
+            android:layout_height="match_parent">
+            <View
+                android:background="@color/theme_main_background_color"
+                android:layout_width="match_parent"
+                android:layout_marginTop="4dp"
+                android:layout_height="49dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/date_time_view"
+            android:background="@color/default_line_color"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="190dp">
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,125 @@
+import java.text.SimpleDateFormat
+
+apply plugin: 'com.android.application'
+
+def verName = "1.0.1"
+
+def buildTime() {
+    def df = new SimpleDateFormat("yyMMddHHmmss")
+    df.setTimeZone(TimeZone.getTimeZone("UTC+08:00"))
+    return df.format(new Date())
+}
+
+def apkSuffix() {
+    def df = new SimpleDateFormat("yyMMdd")
+    df.setTimeZone(TimeZone.getTimeZone("UTC+08:00"))
+    return df.format(new Date())
+}
+
+android {
+    signingConfigs {
+        yxk {
+            keyAlias 'ykx'
+            keyPassword '123456'
+            storeFile file('./organization.jks')
+            storePassword '123456'
+        }
+    }
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+    defaultConfig {
+        applicationId "com.youkexue.agency"
+//        applicationId "com.ykx.organization"
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode 2
+        versionName "${verName}-beta-build-${buildTime()}"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        signingConfig signingConfigs.yxk
+        multiDexEnabled true //dex突破65535限制
+        manifestPlaceholders = [UMENG_CHANNEL_VALUE: "umeng"]
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.yxk
+        }
+        debug {
+            signingConfig signingConfigs.yxk
+        }
+    }
+    productFlavors {
+    }
+    android.dexOptions {
+        jumboMode = true
+
+    }
+
+    lintOptions {
+        disable "ResourceType"
+    }
+    //use legacy for android 6.0
+//    useLibrary 'org.apache.http.legacy'
+
+    // 友盟多渠道打包
+    productFlavors {
+        QQ {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "QQ"]
+        }
+        SJ360 {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "SJ360"]
+        }
+        baidu {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "baidu"]
+        }
+        ali {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "ali"]
+        }
+        huawei {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "huawei"]
+        }
+        mi {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "mi"]
+        }
+        Lenovo {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "Lenovo"]
+        }
+        meizu {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "meizu"]
+        }
+        SJ91 {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "SJ91"]
+        }
+        android {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "android"]
+        }
+        ykx {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "ykx"]
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:25.0.1'
+    testCompile 'junit:junit:4.12'
+    compile project(':baselibs')
+    //    compile 'com.google.android.gms:play-services-appindexing:8.4.0'
+    //    compile 'com.contrarywind:Android-PickerView:3.1.2'
+    //    compile files('libs/universal-image-loader-1.9.3.jar')
+    //    compile files('libs/AMap2DMapAMapSearchAMapLocation.jar')
+    compile project(':imageload')
+    compile project(':sharesdk')
+    compile 'com.journeyapps:zxing-android-embedded:3.3.0'
+    compile 'com.google.zxing:core:3.3.0'
+    //Optional compile for GCM (Google Cloud Messaging).
+    //    compile 'com.google.android.gms:play-services-gcm:9.4.0'
+    //    compile 'com.hyphenate:hyphenate-sdk:3.3.0'
+    compile files('libs/alipaySdk20170407.jar')
+    compile files('libs/wechat-sdk-android-with-mta-1.0.2.jar')
+    compile 'com.zxy.android:tiny:0.0.5'
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>summernote</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- include libraries(jQuery, bootstrap) -->
+    <link href="./css/bootstrap.css" rel="stylesheet">
+    <script src="./js/jquery.js"></script>
+    <script src="./js/bootstrap.js"></script>
+
+    <!-- include summernote css/js-->
+    <link href="./css/summernote.css" rel="stylesheet">
+    <link href="./css/index.css" rel="stylesheet">
+    <script src="./js/summernote.js"></script>
+</head>
+
+<body>
+
+    <!-- <header>
+        <a href="" class="header-return"></a>
+        <span title="zrl">填写班课简介</span>
+        <span class="save-click" onclick="summernoteGet()">保存</span>
+    </header> -->
+
+    <div class="ykx-summernote-msg">
+        <span class="span-imgfile">图片</span>
+        <span class="span-photograph">拍照</span>
+    </div>
+
+    <div id="summernote"></div>
+
+    <div class="ykx-cover">
+        <div class="ykx-alert">
+            <img src="./img/loading.png">
+            <span>数据加载中</span>
+        </div>
+    </div>
+</body>
+<!-- 压缩js -->
+<script src="./js/lrz.all.bundle.js"></script>
+<script src="./js/uploadimg.js"></script>
+<script>
+
+    function summernoteGet() {
+        // $('#summernote').summernote('isEmpty')  检查是否为空
+        if (!$('#summernote').summernote('isEmpty')) {
+            var markupStr = $('#summernote').summernote('code');
+            window.android.submitData(markupStr);//安卓调用方法
+        }
+    }
+
+    function summernoteGetT() {
+        // $('#summernote').summernote('isEmpty')  检查是否为空
+        if (!$('#summernote').summernote('isEmpty')) {
+            var markupStr = $('#summernote').summernote('code');
+            return markupStr;
+        }
+    }
+
+    function summernoteSet(json) {
+        $('#summernote').summernote('code', json);
+    }
+
+</script>
+
+</html>

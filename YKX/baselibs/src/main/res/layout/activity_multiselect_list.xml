@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_multiselect_list"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ykx.baselibs.pages.MultiselectListActivity">
+
+    <TextView
+        android:text="一级名称类别"
+        android:visibility="gone"
+        android:textColor="@color/default_second_text_color"
+        android:gravity="center_vertical"
+        android:background="@color/default_line_color"
+        android:paddingLeft="10dp"
+        android:textSize="@dimen/size_14"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+
+    <LinearLayout
+        android:id="@+id/first_top_view"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:background="@color/default_line_color"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/selected_title_view"
+            android:text="@string/sys_cannel"
+            android:textSize="@dimen/size_14"
+            android:layout_marginBottom="8dp"
+            android:textColor="@color/default_second_text_color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <GridView
+            android:id="@+id/selected_type_view"
+            android:numColumns="2"
+            android:verticalSpacing="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </GridView>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/type_list"
+        android:divider="@null"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

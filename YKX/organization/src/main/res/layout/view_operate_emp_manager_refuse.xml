@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="@string/emp_manager_activity_invited_emp_reject_title"
+            android:textSize="@dimen/size_16"
+            android:textColor="@color/theme_first_text_color"
+            android:layout_marginBottom="15dp"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp">
+            <EditText
+                android:gravity="left|top"
+                android:padding="10dp"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/size_14"
+                android:background="@drawable/edittext_background"
+                android:id="@+id/reject_message_view"
+                android:hint="@string/emp_manager_activity_invited_emp_reject_hint"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/cannel_view"
+                android:text="@string/sys_cannel"
+                android:textColor="@color/theme_main_background_color"
+                android:textSize="@dimen/size_14"
+                android:gravity="center"
+                android:background="@drawable/textview_null_selector"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="35dp"/>
+
+            <TextView
+                android:id="@+id/true_view"
+                android:text="@string/sys_sure"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_14"
+                android:layout_marginLeft="20dp"
+                android:gravity="center"
+                android:background="@drawable/textview_selector"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="35dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

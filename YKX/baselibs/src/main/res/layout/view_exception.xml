@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:gravity="center"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:id="@+id/content_view"
+        android:background="@color/theme_base_main_background_color"
+        android:layout_marginTop="-100dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="165dp"
+            android:layout_height="165dp"
+            android:src="@drawable/kfz"
+            android:id="@+id/exception_imageView"/>
+
+        <TextView
+            android:text="@string/sys_exception_message"
+            android:textColor="@color/default_unselected_color"
+            android:textSize="@dimen/size_15"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:id="@+id/exception_textView"/>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/exception_other_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

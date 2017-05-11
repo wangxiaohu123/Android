@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@color/theme_transparent_style"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/bg_view"
+        android:orientation="horizontal"
+        android:background="@color/black"
+        android:alpha="0.4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:id="@+id/buttom_view"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rv_topbar"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:background="@color/white">
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="@dimen/pickerview_topbar_padding"
+                android:text="@string/pickerview_cancel"
+                android:textColor="@color/default_second_text_color"
+                android:textSize="@dimen/size_16" />
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/btnSubmit"
+                android:layout_toRightOf="@+id/btnCancel"
+                android:textColor="@color/theme_first_text_color"
+                android:textSize="@dimen/size_16" />
+
+            <Button
+                android:id="@id/btnSubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@android:color/transparent"
+                android:gravity="right|center_vertical"
+                android:paddingRight="@dimen/pickerview_topbar_padding"
+                android:text="@string/pickerview_submit"
+                android:textColor="@color/theme_main_background_color"
+                android:textSize="@dimen/size_16" />
+        </RelativeLayout>
+
+        <FrameLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:background="@color/default_line_color"
+            android:layout_height="wrap_content">
+
+
+            <com.bigkoo.pickerview.lib.WheelView
+                android:id="@+id/my_item_view"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:id="@+id/left_view"
+                android:orientation="horizontal"
+                android:layout_width="5dp"
+                android:gravity="center"
+                android:layout_height="match_parent">
+
+                <View
+                    android:background="@color/theme_main_background_color"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="6dp"
+                    android:layout_height="43dp"/>
+
+            </LinearLayout>
+
+        </FrameLayout>
+    </LinearLayout>
+
+</RelativeLayout>

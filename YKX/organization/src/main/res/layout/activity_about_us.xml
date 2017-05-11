@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_about_us"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.ykx.organization.pages.usercenter.setting.AboutUsActivity">
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:background="@mipmap/about_us_logo"
+        android:layout_width="90dp"
+        android:layout_height="87dp"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/item1_view"
+            android:text="@string/activity_about_us_item1"
+            android:textColor="@color/default_first_text_color"
+            android:textSize="@dimen/size_13"
+            android:lineSpacingExtra="1dp"
+            android:lineSpacingMultiplier="1.5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/item2_view"
+            android:text="@string/activity_about_us_item2"
+            android:textColor="@color/default_first_text_color"
+            android:textSize="@dimen/size_13"
+            android:lineSpacingExtra="1dp"
+            android:lineSpacingMultiplier="1.5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/item3_view"
+            android:text="@string/activity_about_us_item3"
+            android:textColor="@color/default_first_text_color"
+            android:layout_width="match_parent"
+            android:textSize="@dimen/size_13"
+            android:lineSpacingExtra="1dp"
+            android:lineSpacingMultiplier="1.5"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/item4_view"
+            android:text="@string/activity_about_us_item4"
+            android:textColor="@color/default_first_text_color"
+            android:textSize="@dimen/size_13"
+            android:lineSpacingExtra="1dp"
+            android:lineSpacingMultiplier="1.5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/item5_view"
+            android:text="@string/activity_about_us_item5"
+            android:textColor="@color/default_first_text_color"
+            android:textSize="@dimen/size_13"
+            android:lineSpacingExtra="1dp"
+            android:layout_width="match_parent"
+            android:lineSpacingMultiplier="1.5"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/item6_view"
+            android:text="@string/activity_about_us_item6"
+            android:textColor="@color/default_first_text_color"
+            android:textSize="@dimen/size_13"
+            android:lineSpacingExtra="1dp"
+            android:layout_width="match_parent"
+            android:lineSpacingMultiplier="1.5"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</LinearLayout>

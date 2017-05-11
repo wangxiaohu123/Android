@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+    <FrameLayout
+        android:layout_marginTop="@dimen/list_view_item_margin_top"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/content_view"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_marginLeft="@dimen/list_view_item_margin_left"
+                android:layout_marginTop="15dp"
+                android:layout_width="100dp"
+                android:layout_height="75dp"
+                android:background="@drawable/corner_imageview_bg"
+                android:src="@drawable/svg_home_user_center_mrtx"
+                android:id="@+id/bk_logo_imageView"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginTop="6dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="@dimen/list_view_item_margin_right"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_marginRight="-15dp"
+                    android:layout_height="35dp">
+
+                    <TextView
+                        android:id="@+id/xq_name_textview"
+                        android:text="课程名称 A"
+                        android:layout_marginLeft="6dp"
+                        style="@style/ListViewItemTitleTextStyle"
+                        android:lines="1"
+                        android:gravity="center_vertical"
+                        android:layout_alignParentLeft="true"
+                        android:layout_toLeftOf="@+id/more_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"/>
+
+
+                    <ImageView
+                        android:id="@+id/more_view"
+                        android:src="@drawable/svg_home_curriculum_more_small"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="50dp"
+                        android:paddingRight="15dp"
+                        android:paddingLeft="15dp"
+                        android:layout_height="match_parent"/>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:weightSum="2"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/zs_num_view"
+                        android:text="招生40人"
+                        android:layout_marginLeft="6dp"
+                        style="@style/ListViewItemSecondTextStyle"
+                        android:lines="1"
+                        android:gravity="center_vertical"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="match_parent"/>
+
+                    <TextView
+                        android:id="@+id/zs_price_view"
+                        android:visibility="gone"
+                        android:text="4000元"
+                        android:layout_marginLeft="6dp"
+                        style="@style/ListViewItemSecondTextStyle"
+                        android:lines="1"
+                        android:gravity="center_vertical"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/curriculum_des_view"
+                    android:text="班课质量满意度 100% (三人评论) "
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginTop="8dp"
+                    style="@style/ListViewItemSecondTextStyle"
+                    android:gravity="center_vertical"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/more_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <View
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="6dp"
+                    android:background="@color/default_line_color"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+
+                <TextView
+                    android:id="@+id/zs_des_view"
+                    android:text="每周三 9：00-11：00"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginTop="8dp"
+                    style="@style/ListViewItemSecondTextStyle"
+                    android:gravity="center_vertical"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/more_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/campus_name_new_view"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginTop="8dp"
+                    style="@style/ListViewItemSecondTextStyle"
+                    android:gravity="center_vertical"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/more_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+                <LinearLayout
+                    android:id="@+id/teacher_list_view"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="6dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!--<ImageView-->
+                        <!--android:src="@drawable/svg_teacher"-->
+                        <!--android:background="@drawable/corner_imageview_teacher_bg"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"/>-->
+                    <!--<ImageView-->
+                        <!--android:src="@drawable/svg_teacher"-->
+                        <!--android:layout_marginLeft="10dp"-->
+                        <!--android:background="@drawable/corner_imageview_teacher_bg"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"/>-->
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/campus_content_view"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginTop="5dp"
+                    android:visibility="gone"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/campus_logo_view"
+                        android:src="@drawable/svg_home_user_center_mrtx"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"/>
+                    <TextView
+                        android:id="@+id/campus_name_view"
+                        android:text="测试校区名称"
+                        android:layout_marginLeft="8dp"
+                        style="@style/ListViewItemSecondTextStyle"
+                        android:lines="1"
+                        android:gravity="center_vertical"
+                        android:layout_alignParentLeft="true"
+                        android:layout_toLeftOf="@+id/more_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <ImageView
+                        android:id="@+id/campus_rz_status_view"
+                        android:src="@mipmap/ysm"
+                        android:layout_marginLeft="8dp"
+                        android:layout_width="27dp"
+                        android:layout_height="20dp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/disable_imageview"
+            android:gravity="center"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:src="@mipmap/curriculum_bxj"
+                android:alpha="0.6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </FrameLayout>
+    <LinearLayout
+        android:id="@+id/xj_view"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:background="@color/default_line_color"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@mipmap/warn"
+                android:layout_marginLeft="5dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp"/>
+            <TextView
+                android:id="@+id/reson_view"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="90dp"
+                android:text="暂无"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/to_edit_view"
+                android:text="@string/curriculum_activity_listview_to_update"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_14"
+                android:layout_marginLeft="-85dp"
+                android:gravity="center"
+                android:background="@drawable/textview_selector"
+                android:layout_width="80dp"
+                android:layout_height="28dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/buttom_view"
+        android:visibility="gone"
+        android:background="@color/default_line_color"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"/>
+
+</LinearLayout>

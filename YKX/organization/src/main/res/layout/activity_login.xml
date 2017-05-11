@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ykx.organization.pages.LoginActivity">
+
+    <!--<ImageView-->
+        <!--android:layout_margin="50dp"-->
+        <!--android:background="@drawable/svg_test_eye"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"/>-->
+
+
+    <LinearLayout
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="100dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.ykx.baselibs.views.CustomEditText
+            android:id="@+id/login_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </com.ykx.baselibs.views.CustomEditText>
+
+
+        <com.ykx.baselibs.views.CustomEditText
+            android:layout_marginTop="30dip"
+            android:id="@+id/login_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </com.ykx.baselibs.views.CustomEditText>
+
+
+        <com.ykx.baselibs.views.SubmitStateView
+            android:id="@+id/login_view"
+            android:layout_marginTop="60dip"
+            android:onClick="loginAction"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+
+        <TextView
+            android:layout_marginTop="20dip"
+            android:onClick="forgetPasswordAction"
+            android:text="@string/login_textview_forget_password"
+            android:textColor="@color/theme_main_background_color"
+            android:gravity="center"
+            android:textSize="@dimen/size_14"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="70dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:text="@string/login_textview_register_password"
+        android:onClick="registerAction"
+        android:textColor="@color/theme_main_background_color"
+        android:textSize="@dimen/size_14"
+        android:gravity="center"
+        android:background="@drawable/textview_null_selector"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,182 @@
+.note-photograph,
+.note-imgfile {
+    position: fixed !important;
+    bottom: 22.56px;
+    z-index: 101;
+}
+
+.note-photograph button,
+.note-imgfile button {
+    padding: 0;
+    margin: 0;
+    outline: inherit;
+    border: none;
+    background-color: #eee;
+}
+
+.note-photograph button:active,
+.note-imgfile button:active,
+.note-photograph button:link,
+.note-imgfile button:link,
+.note-photograph button:hover,
+.note-imgfile button:hover,
+.note-photograph button:visited,
+.note-imgfile button:visited {
+    outline: inherit !important;
+    border: none !important;
+}
+
+.ykx-summernote-msg {
+    font-size: 12px;
+    background-color: #eee;
+    color: #999;
+    position: fixed !important;
+    bottom: 0;
+    z-index: 100;
+    width: 100%;
+    height: 47px;
+}
+
+.ykx-summernote-msg span {
+    position: absolute;
+    bottom: 2.3px;
+}
+
+.note-imgfile {
+    left: 23.26px;
+}
+
+.span-imgfile {
+    left: 22px;
+}
+
+.note-photograph {
+    left: 101.04px;
+}
+
+.span-photograph {
+    left: 100px;
+}
+
+.note-editor.note-frame .note-editing-area .note-editable {
+    min-height: 300px;
+}
+
+.note-popover .popover-content,
+.panel-heading.note-toolbar {
+    padding: 0;
+    border: none;
+}
+
+.note-children-container .btn-default {
+    color: #333;
+    background-color: #fff;
+}
+
+.note-placeholder {
+    color: #ccc;
+}
+
+.note-editor.note-frame {
+    border: none;
+}
+
+.note-statusbar {
+    display: none;
+}
+
+body {
+    background-color: #eee;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 19px;
+    color: #333;
+    background-color: #fff;
+    padding: 14px 0;
+    z-index: 100;
+    border-bottom: 1px solid #eee;
+}
+
+header .save-click {
+    color: #08b381;
+    font-size: 16px;
+    position: absolute;
+    right: 20px;
+    top: 18px;
+}
+
+.header-return {
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 16.4px;
+    background-image: url('../img/head-return.svg');
+    background-size: 100% 100%;
+    left: 20px;
+    top: 18px;
+}
+
+.ykx-cover {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 200;
+    background-color: rgba(0, 0, 0, .1);
+    display: none;
+}
+
+.ykx-alert {
+    background-color: rgba(0, 0, 0, .6);
+    width: 104px;
+    height: 104px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -52px;
+    margin-top: -52px;
+    z-index: 201;
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+}
+
+@-webkit-keyframes change {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+.ykx-alert img {
+    width: 26px;
+    height: 26px;
+    margin-top: 26px;
+    -webkit-animation: change 1.5s linear infinite;
+}
+
+.ykx-alert span {
+    display: block;
+    position: absolute;
+    bottom: 26px;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.note-editor {
+    /*margin-top: 69px;*/
+}
+.panel-body{
+  margin-bottom: 50px;
+}

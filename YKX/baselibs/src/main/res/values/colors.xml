@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="buttonBackGround">#188FFE</color>
+    <color name="buttonTextColor">#ffffff</color>
+    <color name="editTextFrameColor">#ceded3</color>
+
+    <color name="colorPrimary">#188FFE</color>
+    <color name="colorPrimaryDark">#188FFE</color>
+    <color name="colorAccent">#188FFE</color>
+
+
+    <!-- umeng -->
+    <color name="green">#00ff00</color>
+    <color name="focusedtrue">#DBDBDB</color>
+    <color name="presstrue">#EAEAEA</color>
+    <color name="normalback">#FFFFFF</color>
+    <color name="hintcolor">#707070</color>
+
+    <!--跳转字体颜色-->
+    <color name="colorTextOfIntent">#188FFE</color>
+
+    <!--登录输入框字体颜色-->
+    <color name="color_login_input">#898C8D</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="font_3">#333333</color>
+    <color name="font_6">#666666</color>
+    <color name="font_9">#999999</color>
+    <color name="public_bg">#FAFAFA</color>
+    <color name="gray_line">#CDCDCD</color>
+
+    <color name="sys_red">#ff0000</color>
+
+    <!--小标题 灰色背景-->
+    <color name="gray_back">#E5E5E5</color>
+    <color name="filing_radio_group_back">#EDEDED</color>
+    <color name="pic_default_color">#fff</color>
+
+
+    <!--主题样式-->
+    <color name="default_first_text_color">#666666</color>
+    <color name="default_second_text_color">#999999</color>
+    <color name="default_line_color">#eeeeee</color>
+    <color name="default_unselected_color">#cccccc</color>
+    <color name="default_input_text_color">#fafafa</color>
+    <color name="default_background_color">#ffffff</color>
+
+
+    <color name="theme_navigation_background_color">#ffffff</color>
+    <color name="theme_main_background_deep_color">#4ea780</color>
+    <color name="theme_main_background_un_deep_color">#9fe2ce</color>
+    <color name="theme_main_background_color">#08b381</color>
+    <color name="theme_main_background_color_press">#009966</color>
+    <color name="theme_main_background_loading_color">#77cfb1</color>
+    <color name="theme_main_background_unable_color">#ade0cf</color>
+    <color name="theme_main_background_user_info_bg_color">#eefcf3</color>
+    <color name="theme_main_background_bg_color">#ebf7f3</color>
+    <color name="theme_unauto_background_color">#ff9900</color>
+    <color name="theme_small_background_color">#f55821</color>
+    <color name="theme_first_text_color">#333333</color>
+
+
+    <color name="theme_bg_w_view_color">#ffd200</color>
+    <color name="theme_bg_n_view_color">#faad00</color>
+
+    <color name="theme_transparent_style">#00000000</color>
+
+</resources>

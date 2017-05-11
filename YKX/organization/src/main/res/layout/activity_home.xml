@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ykx.organization.pages.HomeActivity">
+
+    <LinearLayout
+        android:id="@+id/home_activity_content"
+        android:orientation="horizontal"
+        android:layout_above="@+id/line_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </LinearLayout>
+
+    <View
+        android:background="@color/default_second_text_color"
+        android:id="@+id/line_view"
+        android:layout_above="@+id/nav_content"
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+
+    <LinearLayout
+        android:id="@+id/nav_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:weightSum="4"
+        android:layout_height="50dp">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:id="@+id/item_gzt"
+            android:onClick="changeContentViewAction"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:id="@+id/home_nav_gzt_imageview"
+                android:src="@drawable/svg_home_gzt"/>
+            <TextView
+                android:id="@+id/home_nav_gzt_textview"
+                android:text="@string/home_nav_item_gzt"
+                style="@style/NavigationMenuTextStyle"
+                android:layout_marginTop="1dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:id="@+id/item_ll"
+            android:onClick="changeContentViewAction"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/home_nav_ll_imageview"
+                android:src="@drawable/svg_home_ll"
+                android:layout_width="22dp"
+                android:layout_height="22dp"/>
+            <TextView
+                android:id="@+id/home_nav_ll_textview"
+                android:text="@string/home_nav_item_ll"
+                style="@style/NavigationMenuTextStyle"
+                android:layout_marginTop="1dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:id="@+id/item_jx"
+            android:onClick="changeContentViewAction"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/home_nav_jx_imageview"
+                android:src="@drawable/svg_home_jx"
+                android:layout_width="22dp"
+                android:layout_height="22dp"/>
+            <TextView
+                android:id="@+id/home_nav_jx_textview"
+                android:text="@string/home_nav_item_jx"
+                style="@style/NavigationMenuTextStyle"
+                android:layout_marginTop="1dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:id="@+id/item_yy"
+            android:onClick="changeContentViewAction"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/home_nav_yy_imageview"
+                android:src="@drawable/svg_home_yy"
+                android:layout_width="22dp"
+                android:layout_height="22dp"/>
+            <TextView
+                android:id="@+id/home_nav_yy_textview"
+                android:text="@string/home_nav_item_yy"
+                style="@style/NavigationMenuTextStyle"
+                android:layout_marginTop="1dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>
